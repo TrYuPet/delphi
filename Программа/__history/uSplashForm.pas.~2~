@@ -1,0 +1,36 @@
+unit uSplashForm;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, jpeg, StdCtrls;
+
+type
+  TSplashForm = class(TForm)
+    Label1: TLabel;
+    Image1: TImage;
+    Timer1: TTimer;
+    procedure Timer1Timer(Sender: TObject);
+  private
+    time: Word;
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  SplashForm: TSplashForm;
+
+implementation
+
+{$R *.dfm}
+
+procedure TSplashForm.Timer1Timer(Sender: TObject);
+begin
+  if  (time div 1000)=2 then Close;
+  inc(time,Timer1.Interval);
+  Label1.Caption:= Label1.Caption + '.'
+end;
+
+end.

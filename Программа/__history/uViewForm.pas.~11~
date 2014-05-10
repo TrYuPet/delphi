@@ -1,0 +1,291 @@
+unit uViewForm;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, StdCtrls, Buttons, sBitBtn, Grids, sPanel, ShellAPI,
+  sSkinProvider, sSkinManager, sLabel, sSplitter, sGroupBox, DB, DBTables,
+  uDBGridFrame, sSpeedButton, ComCtrls, xlcClasses, xlEngine, xlReport,
+  xlReportG2, xlcOPack, xlProOPack;
+
+type
+  TViewForm = class(TForm)
+    sSkinProvider: TsSkinProvider;
+    pnlTop: TsPanel;
+    btnDivider1: TsSpeedButton;
+    btnHelp: TsSpeedButton;
+    btnAdd: TsSpeedButton;
+    btnDel: TsSpeedButton;
+    btnEdit: TsSpeedButton;
+    DBGridFrame1: TDBGridFrame;
+    sSpeedButton2: TsSpeedButton;
+    xlReport: TxlReport;
+    xlProPackage: TxlProPackage;
+    procedure FormCreate(Sender: TObject);
+    procedure btnDelClick(Sender: TObject);
+    procedure btnAddClick(Sender: TObject);
+    procedure btnEditClick(Sender: TObject);
+    procedure DBGridFrame1DBGridDblClick(Sender: TObject);
+    procedure sSpeedButton2Click(Sender: TObject);
+    procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure OnReportProgress(Report: TxlReport; const Position, Max: integer);
+    procedure btnHelpClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ViewForm: TViewForm;
+
+implementation
+
+uses uDataModule, uAddEditOTKLForm, uWaitForm, uAbout;
+
+{$R *.dfm}
+
+procedure TViewForm.FormCreate(Sender: TObject);
+begin with DBGridFrame1 do
+  begin
+    DBGridFrame1.DBGRID.OnDrawColumnCell:= DBGridFrame1.DBGridDrawColumnCellJUR;
+    DBGRID.DataSource:= uDataModule.DataModule1.DS_JUR
+  end;
+end;
+
+procedure TViewForm.FormKeyUp(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  case Key of
+    VK_ESCAPE: if Screen.ActiveForm=Self then Close;
+    VK_RETURN: btnEditClick(Sender);
+    VK_DELETE: btnDelClick(Sender);
+    VK_INSERT: btnAddClick(Sender)
+  end;
+end;
+
+procedure TViewForm.OnReportProgress(Report: TxlReport; const Position, Max: integer);
+begin
+  WaitForm.SetMax(Max);
+  WaitForm.SetProgress(Position);
+end;
+
+procedure TViewForm.sSpeedButton2Click(Sender: TObject);
+begin
+  // Вызывается после выполнения каждого этапа  создания отчета
+  xlReport.OnProgress:= OnReportProgress;
+  try
+    WaitForm:= TWaitForm.Create(Self,False,False);
+    WaitForm.Show;
+    xlReport.Report
+  finally
+    WaitForm.Free;
+  end;
+end;
+
+procedure ShowAddEditWindow(Edit: Boolean);
+  var m: Integer;
+
+  function GetH(TIME: String): String;
+  var position: Integer;
+  begin
+    try
+    position:= Pos(':',TIME);
+    if position=0 then
+      Result:= ''
+    else
+      Result:= Copy(TIME,1,position-1)
+    except
+      raise Exception.Create('Ошибка записи в базу данных!');
+    end;
+  end;
+
+  function GetM(TIME: String): String;
+  var position: Integer;
+  begin
+    try
+    position:= Pos(':',TIME);
+    if position=0 then
+      Result:= ''
+    else
+      Result:= Copy(TIME,position+1,Length(TIME)-position)
+    except
+      raise Exception.Create('Ошибка записи в базу данных!');
+    end;
+  end;
+
+begin
+  try
+    AddEditOTKLForm:= TAddEditOTKLForm.Create(ViewForm, Edit);
+    if Edit then
+    With AddEditOTKLForm, uDataModule.DataModule1 do
+    begin
+      KODPS   := DBF_JUR.FieldByName('K_PS').AsString;
+      Number  := DBF_JUR.FieldByName('K_LIN').AsString;
+      Date    := DBF_JUR.FieldByName('DATA_OTKL').AsString;
+      TIME_OL := DBF_JUR.FieldByName('TIME_OLH').AsString+':'+DBF_JUR.FieldByName('TIME_OLM').AsString;
+      TIME_OT := DBF_JUR.FieldByName('TIME_OTH').AsString+':'+DBF_JUR.FieldByName('TIME_OTM').AsString;
+      TIME_VL := DBF_JUR.FieldByName('TIME_VLH').AsString+':'+DBF_JUR.FieldByName('TIME_VLM').AsString;
+      TIME_VT := DBF_JUR.FieldByName('TIME_VTH').AsString+':'+DBF_JUR.FieldByName('TIME_VTM').AsString;
+      PROD_OL := DBF_JUR.FieldByName('PROD_OLH').AsString+':'+DBF_JUR.FieldByName('PROD_OLM').AsString;
+      PROD_OT := DBF_JUR.FieldByName('PROD_OTH').AsString+':'+DBF_JUR.FieldByName('PROD_OTM').AsString;
+      KOD     := DBF_JUR.FieldByName('KOD').AsString;
+      POVRZ_KOL  := DBF_JUR.FieldByName('POVRZ_KOL').AsString;
+      POTR_NP  := DBF_JUR.FieldByName('POTR_NP').AsString;
+      POTR_TP  := DBF_JUR.FieldByName('POTR_TP').AsString;
+      POTR_FERM  := DBF_JUR.FieldByName('POTR_FERM').AsString;
+      POTR_KES  := DBF_JUR.FieldByName('POTR_KES').AsString;
+      POTR_ABM  := DBF_JUR.FieldByName('POTR_ABM').AsString;
+      POTR_NEDK  := DBF_JUR.FieldByName('POTR_NEDK').AsString;
+      OSN_POTR  := DBF_JUR.FieldByName('OSN_POTR').AsString;
+      POTR_1KAT  := DBF_JUR.FieldByName('POTR_1KAT').AsString;
+      POTR_ABP  := DBF_JUR.FieldByName('POTR_ABP').AsString;
+      POTR_2KAT  := DBF_JUR.FieldByName('POTR_2KAT').AsString;
+      Prichina   := DBF_JUR.FieldByName('PRICHINA').AsString;
+      OTLKBALANS := DBF_JUR.FieldByName('OTLKBALANS').AsString;
+      ZACH_SHEMA := DBF_JUR.FieldByName('ZACH_SHEMA').AsString;
+      AVT_1POLE  := DBF_JUR.FieldByName('AVT_1POLE').AsString;
+      AVT_2POLE  := DBF_JUR.FieldByName('AVT_2POLE').AsString;
+      AVT_POGODA := DBF_JUR.FieldByName('AVT_POGODA').AsString;
+      POVRZ_ELMT := DBF_JUR.FieldByName('POVRZ_ELMT').AsString;
+         end;
+    case AddEditOTKLForm.ShowModal of
+      mrOK:
+        case Edit of
+          TRUE:  with AddEditOTKLForm do
+                 begin  // изменяем запись
+                   m:= StrToInt(FormatDateTime('m',StrToDate(Date)));
+                   with uDataModule.DataModule1.DBF_JUR do
+                   begin
+                     Edit;
+                     FieldByName('MES').AsInteger:= m;
+                     FieldByName('K_PS').AsString:= KODPS;
+                     FieldByName('K_LIN').AsString:= Number;
+                     FieldByName('DATA_OTKL').AsString:= Date;
+                     FieldByName('TIME_OLH').AsString:= GetH(TIME_OL);
+                     FieldByName('TIME_OLM').AsString:= GetM(TIME_OL);
+                     FieldByName('TIME_OTH').AsString:= GetH(TIME_OT);
+                     FieldByName('TIME_OTM').AsString:= GetM(TIME_OT);
+                     FieldByName('TIME_VLH').AsString:= GetH(TIME_VL);
+                     FieldByName('TIME_VLM').AsString:= GetM(TIME_VL);
+                     FieldByName('TIME_VTH').AsString:= GetH(TIME_VT);
+                     FieldByName('TIME_VTM').AsString:= GetM(TIME_VT);
+                     FieldByName('PROD_OLH').AsString:= GetH(PROD_OL);
+                     FieldByName('PROD_OLM').AsString:= GetM(PROD_OL);
+                     FieldByName('PROD_OTH').AsString:= GetH(PROD_OT);
+                     FieldByName('PROD_OTM').AsString:= GetM(PROD_OT);
+                     FieldByName('PRICHINA').AsString:= Prichina;
+                     FieldByName('OTLKBALANS').AsString:= OTLKBALANS;
+                     FieldByName('ZACH_SHEMA').AsString:= ZACH_SHEMA;
+                     FieldByName('AVT_1POLE').AsString:= AVT_1POLE;
+                     FieldByName('AVT_2POLE').AsString:= AVT_2POLE;
+                     FieldByName('AVT_POGODA').AsString:= AVT_POGODA;
+                     FieldByName('POVRZ_ELMT').AsString:= POVRZ_ELMT;
+                     FieldByName('KOD').AsString:= KOD;
+                     FieldByName('POVRZ_KOL').AsString:= POVRZ_KOL;
+                     FieldByName('POTR_NP').AsString:= POTR_NP;
+                     FieldByName('POTR_TP').AsString:= POTR_TP;
+                     FieldByName('POTR_FERM').AsString:= POTR_FERM;
+                     FieldByName('POTR_KES').AsString:= POTR_KES;
+                     FieldByName('POTR_ABM').AsString:= POTR_ABM;
+                     FieldByName('POTR_NEDK').AsString:= POTR_NEDK;
+                     FieldByName('OSN_POTR').AsString:= OSN_POTR;
+                     FieldByName('POTR_1KAT').AsString:= POTR_1KAT;
+                     FieldByName('POTR_ABP').AsString:= POTR_ABP;
+                     FieldByName('POTR_2KAT').AsString:= POTR_2KAT;
+                     Post;
+                   end;
+                 end;
+          FALSE: with AddEditOTKLForm do
+                 begin  // добавляем запись
+                   m:= StrToInt(FormatDateTime('m',StrToDate(Date)));
+                   with uDataModule.DataModule1.DBF_JUR do
+                   begin
+                     Append;
+                     FieldByName('MES').AsInteger:= m;
+                     FieldByName('K_PS').AsString:= KODPS;
+                     FieldByName('K_LIN').AsString:= Number;
+                     FieldByName('DATA_OTKL').AsString:= Date;
+                     FieldByName('TIME_OLH').AsString:= GetH(TIME_OL);
+                     FieldByName('TIME_OLM').AsString:= GetM(TIME_OL);
+                     FieldByName('TIME_OTH').AsString:= GetH(TIME_OT);
+                     FieldByName('TIME_OTM').AsString:= GetM(TIME_OT);
+                     FieldByName('TIME_VLH').AsString:= GetH(TIME_VL);
+                     FieldByName('TIME_VLM').AsString:= GetM(TIME_VL);
+                     FieldByName('TIME_VTH').AsString:= GetH(TIME_VT);
+                     FieldByName('TIME_VTM').AsString:= GetM(TIME_VT);
+                     FieldByName('PROD_OLH').AsString:= GetH(PROD_OL);
+                     FieldByName('PROD_OLM').AsString:= GetM(PROD_OL);
+                     FieldByName('PROD_OTH').AsString:= GetH(PROD_OT);
+                     FieldByName('PROD_OTM').AsString:= GetM(PROD_OT);
+                     FieldByName('PRICHINA').AsString:= Prichina;
+                     FieldByName('OTLKBALANS').AsString:= OTLKBALANS;
+                     FieldByName('ZACH_SHEMA').AsString:= ZACH_SHEMA;
+                     FieldByName('AVT_1POLE').AsString:= AVT_1POLE;
+                     FieldByName('AVT_2POLE').AsString:= AVT_2POLE;
+                     FieldByName('AVT_POGODA').AsString:= AVT_POGODA;
+                     FieldByName('POVRZ_ELMT').AsString:= POVRZ_ELMT;
+                     FieldByName('KOD').AsString:= KOD;
+                     FieldByName('POVRZ_KOL').AsString:= POVRZ_KOL;
+                     FieldByName('POTR_NP').AsString:= POTR_NP;
+                     FieldByName('POTR_TP').AsString:= POTR_TP;
+                     FieldByName('POTR_FERM').AsString:= POTR_FERM;
+                     FieldByName('POTR_KES').AsString:= POTR_KES;
+                     FieldByName('POTR_ABM').AsString:= POTR_ABM;
+                     FieldByName('POTR_NEDK').AsString:= POTR_NEDK;
+                     FieldByName('OSN_POTR').AsString:= OSN_POTR;
+                     FieldByName('POTR_1KAT').AsString:= POTR_1KAT;
+                     FieldByName('POTR_ABP').AsString:= POTR_ABP;
+                     FieldByName('POTR_2KAT').AsString:= POTR_2KAT;
+                     Post;
+                   end;
+                 end;
+        end;
+      mrCancel: ; // отмена
+    end;
+
+  finally
+    AddEditOTKLForm.Free
+  end;
+end;
+
+procedure TViewForm.btnAddClick(Sender: TObject);
+begin
+  ShowAddEditWindow(False)
+end;
+
+procedure TViewForm.btnEditClick(Sender: TObject);
+begin
+  ShowAddEditWindow(True)
+end;
+
+procedure TViewForm.btnHelpClick(Sender: TObject);
+begin
+  ShellExecute(0, 'open', Pchar(ExtractFilePath(Application.ExeName) + '\Help\proghelp.chm'), nil, nil, SW_MAXIMIZE);
+end;
+
+procedure TViewForm.DBGridFrame1DBGridDblClick(Sender: TObject);
+begin
+  btnEditClick(Sender)
+end;
+
+procedure TViewForm.btnDelClick(Sender: TObject);
+begin
+  case  MessageBox(Self.Handle,
+          PChar('ВНИМАНИЕ'#10'Подтвердите удаление записи №'+IntToStr(DBGridFrame1.DBGrid.DataSource.DataSet.RecNo)),
+          PChar(Self.Caption),
+          MB_ICONQUESTION or MB_YESNO) of
+    IDYES: try try
+             DBGridFrame1.DBGrid.DataSource.DataSet.Delete;
+             DBGridFrame1.DBGrid.DataSource.DataSet.Refresh
+           finally
+             MessageBox(Self.Handle, PChar('Запись удалена.'), PChar(Self.Caption), MB_ICONINFORMATION or MB_OK)
+           end;
+           except on e: exception do
+             MessageBox(Self.Handle, PChar('Запись не удалось удалить!'), PChar(Self.Caption), MB_ICONEXCLAMATION or MB_OK)
+           end;
+  end;
+end;
+
+end.

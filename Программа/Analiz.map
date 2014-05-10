@@ -1,0 +1,1685 @@
+
+ Start         Length     Name                   Class
+ 0001:00401000 0000CA34H .text                   CODE
+ 0002:0040E000 000003CCH .itext                  ICODE
+ 0003:0040F000 00000068H .data                   DATA
+ 0004:00410000 00001F90H .bss                    BSS
+ 0005:00000000 00000000H .tls                    TLS
+
+
+Detailed map of segments
+
+ 0001:00000000 0000017E C=CODE     S=.text    G=(none)   M=System   ACBP=A9
+ 0001:00000180 0000005D C=CODE     S=.text    G=(none)   M=SysInit  ACBP=A9
+ 0001:000001E0 00000079 C=CODE     S=.text    G=(none)   M=Windows  ACBP=A9
+ 0001:0000025C 0000009E C=CODE     S=.text    G=(none)   M=SysUtils ACBP=A9
+ 0001:000002FC 00000006 C=CODE     S=.text    G=(none)   M=VarUtils ACBP=A9
+ 0001:00000304 0000002E C=CODE     S=.text    G=(none)   M=Variants ACBP=A9
+ 0001:00000334 00000006 C=CODE     S=.text    G=(none)   M=TypInfo  ACBP=A9
+ 0001:0000033C 000000B6 C=CODE     S=.text    G=(none)   M=Classes  ACBP=A9
+ 0001:000003F4 00000006 C=CODE     S=.text    G=(none)   M=TimeSpan ACBP=A9
+ 0001:000003FC 00000006 C=CODE     S=.text    G=(none)   M=SyncObjs ACBP=A9
+ 0001:00000404 00000006 C=CODE     S=.text    G=(none)   M=UxTheme  ACBP=A9
+ 0001:0000040C 00000006 C=CODE     S=.text    G=(none)   M=HelpIntfs ACBP=A9
+ 0001:00000414 00000006 C=CODE     S=.text    G=(none)   M=MultiMon ACBP=A9
+ 0001:0000041C 0000000E C=CODE     S=.text    G=(none)   M=IOUtils  ACBP=A9
+ 0001:0000042C 00000006 C=CODE     S=.text    G=(none)   M=IniFiles ACBP=A9
+ 0001:00000434 00000006 C=CODE     S=.text    G=(none)   M=Registry ACBP=A9
+ 0001:0000043C 00000046 C=CODE     S=.text    G=(none)   M=Graphics ACBP=A9
+ 0001:00000484 00000006 C=CODE     S=.text    G=(none)   M=GraphUtil ACBP=A9
+ 0001:0000048C 00000006 C=CODE     S=.text    G=(none)   M=ShellAPI ACBP=A9
+ 0001:00000494 00000006 C=CODE     S=.text    G=(none)   M=Printers ACBP=A9
+ 0001:0000049C 00000006 C=CODE     S=.text    G=(none)   M=Clipbrd  ACBP=A9
+ 0001:000004A4 00000006 C=CODE     S=.text    G=(none)   M=ExtCtrls ACBP=A9
+ 0001:000004AC 00000006 C=CODE     S=.text    G=(none)   M=ComCtrls ACBP=A9
+ 0001:000004B4 00000006 C=CODE     S=.text    G=(none)   M=Dialogs  ACBP=A9
+ 0001:000004BC 00000006 C=CODE     S=.text    G=(none)   M=FlatSB   ACBP=A9
+ 0001:000004C4 00000006 C=CODE     S=.text    G=(none)   M=Menus    ACBP=A9
+ 0001:000004CC 00000196 C=CODE     S=.text    G=(none)   M=Controls ACBP=A9
+ 0001:00000664 00000006 C=CODE     S=.text    G=(none)   M=Themes   ACBP=A9
+ 0001:0000066C 00000006 C=CODE     S=.text    G=(none)   M=ActnList ACBP=A9
+ 0001:00000674 000001CE C=CODE     S=.text    G=(none)   M=Forms    ACBP=A9
+ 0001:00000844 00000006 C=CODE     S=.text    G=(none)   M=WideStrings ACBP=A9
+ 0001:0000084C 00000006 C=CODE     S=.text    G=(none)   M=FMTBcd   ACBP=A9
+ 0001:00000854 00000006 C=CODE     S=.text    G=(none)   M=SqlTimSt ACBP=A9
+ 0001:0000085C 00000006 C=CODE     S=.text    G=(none)   M=ComObj   ACBP=A9
+ 0001:00000864 0000006E C=CODE     S=.text    G=(none)   M=DB       ACBP=A9
+ 0001:000008D4 0000000E C=CODE     S=.text    G=(none)   M=Buttons  ACBP=A9
+ 0001:000008E4 0000000E C=CODE     S=.text    G=(none)   M=Mask     ACBP=A9
+ 0001:000008F4 00000006 C=CODE     S=.text    G=(none)   M=DBPWDlg  ACBP=A9
+ 0001:000008FC 00000006 C=CODE     S=.text    G=(none)   M=DBLogDlg ACBP=A9
+ 0001:00000904 00000026 C=CODE     S=.text    G=(none)   M=DBCtrls  ACBP=A9
+ 0001:0000092C 00000006 C=CODE     S=.text    G=(none)   M=sConst   ACBP=A9
+ 0001:00000934 00000006 C=CODE     S=.text    G=(none)   M=jpeg     ACBP=A9
+ 0001:0000093C 00000006 C=CODE     S=.text    G=(none)   M=sDefaults ACBP=A9
+ 0001:00000944 00000006 C=CODE     S=.text    G=(none)   M=sDateUtils ACBP=A9
+ 0001:0000094C 00000006 C=CODE     S=.text    G=(none)   M=Grids    ACBP=A9
+ 0001:00000954 00000006 C=CODE     S=.text    G=(none)   M=pngimage ACBP=A9
+ 0001:0000095C 00000006 C=CODE     S=.text    G=(none)   M=ExtDlgs  ACBP=A9
+ 0001:00000964 00000006 C=CODE     S=.text    G=(none)   M=sComboBoxes ACBP=A9
+ 0001:0000096C 00000006 C=CODE     S=.text    G=(none)   M=sGauge   ACBP=A9
+ 0001:00000974 00000006 C=CODE     S=.text    G=(none)   M=sSpinEdit ACBP=A9
+ 0001:0000097C 00000006 C=CODE     S=.text    G=(none)   M=acShellCtrls ACBP=A9
+ 0001:00000984 00000006 C=CODE     S=.text    G=(none)   M=sDialogs ACBP=A9
+ 0001:0000098C 00000006 C=CODE     S=.text    G=(none)   M=sPopupClndr ACBP=A9
+ 0001:00000994 0000000E C=CODE     S=.text    G=(none)   M=sTooledit ACBP=A9
+ 0001:000009A4 00000006 C=CODE     S=.text    G=(none)   M=sCalcUnit ACBP=A9
+ 0001:000009AC 00000006 C=CODE     S=.text    G=(none)   M=sGradient ACBP=A9
+ 0001:000009B4 00000006 C=CODE     S=.text    G=(none)   M=acGlow   ACBP=A9
+ 0001:000009BC 00000006 C=CODE     S=.text    G=(none)   M=sThirdParty ACBP=A9
+ 0001:000009C4 00000006 C=CODE     S=.text    G=(none)   M=sGlyphUtils ACBP=A9
+ 0001:000009CC 00000006 C=CODE     S=.text    G=(none)   M=sMonthCalendar ACBP=A9
+ 0001:000009D4 00000006 C=CODE     S=.text    G=(none)   M=sGraphUtils ACBP=A9
+ 0001:000009DC 00000006 C=CODE     S=.text    G=(none)   M=sVclUtils ACBP=A9
+ 0001:000009E4 00000006 C=CODE     S=.text    G=(none)   M=acDials  ACBP=A9
+ 0001:000009EC 00000006 C=CODE     S=.text    G=(none)   M=sSkinMenus ACBP=A9
+ 0001:000009F4 00000006 C=CODE     S=.text    G=(none)   M=sStyleSimply ACBP=A9
+ 0001:000009FC 00000016 C=CODE     S=.text    G=(none)   M=sSkinManager ACBP=A9
+ 0001:00000A14 00000006 C=CODE     S=.text    G=(none)   M=acPNG    ACBP=A9
+ 0001:00000A1C 00000006 C=CODE     S=.text    G=(none)   M=acSBUtils ACBP=A9
+ 0001:00000A24 00000006 C=CODE     S=.text    G=(none)   M=sSkinProvider ACBP=A9
+ 0001:00000A2C 00000006 C=CODE     S=.text    G=(none)   M=acntUtils ACBP=A9
+ 0001:00000A34 00000006 C=CODE     S=.text    G=(none)   M=sMessages ACBP=A9
+ 0001:00000A3C 00000026 C=CODE     S=.text    G=(none)   M=DBGrids  ACBP=A9
+ 0001:00000A64 00000016 C=CODE     S=.text    G=(none)   M=Halcn6db ACBP=A9
+ 0001:00000A7C 00000006 C=CODE     S=.text    G=(none)   M=gs6_disk ACBP=A9
+ 0001:00000A84 00000006 C=CODE     S=.text    G=(none)   M=gs6_date ACBP=A9
+ 0001:00000A8C 00000006 C=CODE     S=.text    G=(none)   M=gs6_glbl ACBP=A9
+ 0001:00000A94 00000006 C=CODE     S=.text    G=(none)   M=AnsiStrings ACBP=A9
+ 0001:00000A9C 00000006 C=CODE     S=.text    G=(none)   M=gs6_tool ACBP=A9
+ 0001:00000AA4 00000006 C=CODE     S=.text    G=(none)   M=gs6_sql  ACBP=A9
+ 0001:00000AAC 00000006 C=CODE     S=.text    G=(none)   M=gs6_fctn ACBP=A9
+ 0001:00000AB4 00000006 C=CODE     S=.text    G=(none)   M=gs6_lcal ACBP=A9
+ 0001:00000ABC 00000006 C=CODE     S=.text    G=(none)   M=gs6_dbf  ACBP=A9
+ 0001:00000AC4 00000006 C=CODE     S=.text    G=(none)   M=gs6_dbsy ACBP=A9
+ 0001:00000ACC 000012BD C=CODE     S=.text    G=(none)   M=uDataModule ACBP=A9
+ 0001:00001D8C 000005E6 C=CODE     S=.text    G=(none)   M=uDBGridFrame ACBP=A9
+ 0001:00002374 00000006 C=CODE     S=.text    G=(none)   M=xlcUtils ACBP=A9
+ 0001:0000237C 00000006 C=CODE     S=.text    G=(none)   M=xlEngine ACBP=A9
+ 0001:00002384 00000006 C=CODE     S=.text    G=(none)   M=xlStdOPack ACBP=A9
+ 0001:0000238C 00000006 C=CODE     S=.text    G=(none)   M=OleCtrls ACBP=A9
+ 0001:00002394 00000006 C=CODE     S=.text    G=(none)   M=AxCtrls  ACBP=A9
+ 0001:0000239C 00000006 C=CODE     S=.text    G=(none)   M=DdeMan   ACBP=A9
+ 0001:000023A4 00000006 C=CODE     S=.text    G=(none)   M=OleCtnrs ACBP=A9
+ 0001:000023AC 00000006 C=CODE     S=.text    G=(none)   M=xlPivotOPack ACBP=A9
+ 0001:000023B4 00000006 C=CODE     S=.text    G=(none)   M=xlProOPack ACBP=A9
+ 0001:000023BC 00000006 C=CODE     S=.text    G=(none)   M=acAlphaHints ACBP=A9
+ 0001:000023C4 00000006 C=CODE     S=.text    G=(none)   M=DBTables ACBP=A9
+ 0001:000023CC 0000000E C=CODE     S=.text    G=(none)   M=sDBNavigator ACBP=A9
+ 0001:000023DC 0000265C C=CODE     S=.text    G=(none)   M=uAddEditOTKLForm ACBP=A9
+ 0001:00004A38 000015FC C=CODE     S=.text    G=(none)   M=uViewForm ACBP=A9
+ 0001:00006034 00000CA0 C=CODE     S=.text    G=(none)   M=uAboutForm ACBP=A9
+ 0001:00006CD4 00000BD7 C=CODE     S=.text    G=(none)   M=uMainForm ACBP=A9
+ 0001:000078AC 000004D3 C=CODE     S=.text    G=(none)   M=uWaitForm ACBP=A9
+ 0001:00007D80 00000E50 C=CODE     S=.text    G=(none)   M=uAddEditLINEForm ACBP=A9
+ 0001:00008BD0 00000CB0 C=CODE     S=.text    G=(none)   M=uAddEditPSForm ACBP=A9
+ 0001:00009880 00000A74 C=CODE     S=.text    G=(none)   M=uAddEditRESForm ACBP=A9
+ 0001:0000A2F4 00001EB0 C=CODE     S=.text    G=(none)   M=uSpravForm ACBP=A9
+ 0001:0000C1A4 0000088E C=CODE     S=.text    G=(none)   M=Analiz   ACBP=A9
+ 0002:00000000 00000006 C=ICODE    S=.itext   G=(none)   M=System   ACBP=A9
+ 0002:00000008 00000016 C=ICODE    S=.itext   G=(none)   M=Windows  ACBP=A9
+ 0002:00000020 0000001E C=ICODE    S=.itext   G=(none)   M=SysUtils ACBP=A9
+ 0002:00000040 00000006 C=ICODE    S=.itext   G=(none)   M=VarUtils ACBP=A9
+ 0002:00000048 00000006 C=ICODE    S=.itext   G=(none)   M=Variants ACBP=A9
+ 0002:00000050 00000006 C=ICODE    S=.itext   G=(none)   M=TypInfo  ACBP=A9
+ 0002:00000058 0000000E C=ICODE    S=.itext   G=(none)   M=Classes  ACBP=A9
+ 0002:00000068 00000006 C=ICODE    S=.itext   G=(none)   M=TimeSpan ACBP=A9
+ 0002:00000070 00000006 C=ICODE    S=.itext   G=(none)   M=SyncObjs ACBP=A9
+ 0002:00000078 00000006 C=ICODE    S=.itext   G=(none)   M=UxTheme  ACBP=A9
+ 0002:00000080 00000006 C=ICODE    S=.itext   G=(none)   M=HelpIntfs ACBP=A9
+ 0002:00000088 00000006 C=ICODE    S=.itext   G=(none)   M=MultiMon ACBP=A9
+ 0002:00000090 0000000E C=ICODE    S=.itext   G=(none)   M=IOUtils  ACBP=A9
+ 0002:000000A0 00000006 C=ICODE    S=.itext   G=(none)   M=IniFiles ACBP=A9
+ 0002:000000A8 00000006 C=ICODE    S=.itext   G=(none)   M=Registry ACBP=A9
+ 0002:000000B0 00000006 C=ICODE    S=.itext   G=(none)   M=Graphics ACBP=A9
+ 0002:000000B8 00000006 C=ICODE    S=.itext   G=(none)   M=GraphUtil ACBP=A9
+ 0002:000000C0 00000006 C=ICODE    S=.itext   G=(none)   M=Printers ACBP=A9
+ 0002:000000C8 00000006 C=ICODE    S=.itext   G=(none)   M=Clipbrd  ACBP=A9
+ 0002:000000D0 00000006 C=ICODE    S=.itext   G=(none)   M=ExtCtrls ACBP=A9
+ 0002:000000D8 00000006 C=ICODE    S=.itext   G=(none)   M=ComCtrls ACBP=A9
+ 0002:000000E0 00000006 C=ICODE    S=.itext   G=(none)   M=Dialogs  ACBP=A9
+ 0002:000000E8 00000006 C=ICODE    S=.itext   G=(none)   M=FlatSB   ACBP=A9
+ 0002:000000F0 00000006 C=ICODE    S=.itext   G=(none)   M=Menus    ACBP=A9
+ 0002:000000F8 00000006 C=ICODE    S=.itext   G=(none)   M=Controls ACBP=A9
+ 0002:00000100 00000006 C=ICODE    S=.itext   G=(none)   M=Themes   ACBP=A9
+ 0002:00000108 00000006 C=ICODE    S=.itext   G=(none)   M=ActnList ACBP=A9
+ 0002:00000110 00000006 C=ICODE    S=.itext   G=(none)   M=Forms    ACBP=A9
+ 0002:00000118 00000006 C=ICODE    S=.itext   G=(none)   M=WideStrings ACBP=A9
+ 0002:00000120 00000006 C=ICODE    S=.itext   G=(none)   M=FMTBcd   ACBP=A9
+ 0002:00000128 00000006 C=ICODE    S=.itext   G=(none)   M=SqlTimSt ACBP=A9
+ 0002:00000130 00000006 C=ICODE    S=.itext   G=(none)   M=ComObj   ACBP=A9
+ 0002:00000138 00000006 C=ICODE    S=.itext   G=(none)   M=DB       ACBP=A9
+ 0002:00000140 00000006 C=ICODE    S=.itext   G=(none)   M=Buttons  ACBP=A9
+ 0002:00000148 00000006 C=ICODE    S=.itext   G=(none)   M=DBPWDlg  ACBP=A9
+ 0002:00000150 00000006 C=ICODE    S=.itext   G=(none)   M=DBLogDlg ACBP=A9
+ 0002:00000158 00000006 C=ICODE    S=.itext   G=(none)   M=DBCtrls  ACBP=A9
+ 0002:00000160 00000006 C=ICODE    S=.itext   G=(none)   M=sConst   ACBP=A9
+ 0002:00000168 00000006 C=ICODE    S=.itext   G=(none)   M=jpeg     ACBP=A9
+ 0002:00000170 00000006 C=ICODE    S=.itext   G=(none)   M=sDefaults ACBP=A9
+ 0002:00000178 00000006 C=ICODE    S=.itext   G=(none)   M=sDateUtils ACBP=A9
+ 0002:00000180 00000006 C=ICODE    S=.itext   G=(none)   M=pngimage ACBP=A9
+ 0002:00000188 00000006 C=ICODE    S=.itext   G=(none)   M=ExtDlgs  ACBP=A9
+ 0002:00000190 00000006 C=ICODE    S=.itext   G=(none)   M=sComboBoxes ACBP=A9
+ 0002:00000198 00000006 C=ICODE    S=.itext   G=(none)   M=acShellCtrls ACBP=A9
+ 0002:000001A0 00000006 C=ICODE    S=.itext   G=(none)   M=sDialogs ACBP=A9
+ 0002:000001A8 00000006 C=ICODE    S=.itext   G=(none)   M=sPopupClndr ACBP=A9
+ 0002:000001B0 00000006 C=ICODE    S=.itext   G=(none)   M=sCalcUnit ACBP=A9
+ 0002:000001B8 00000006 C=ICODE    S=.itext   G=(none)   M=sGradient ACBP=A9
+ 0002:000001C0 00000006 C=ICODE    S=.itext   G=(none)   M=acGlow   ACBP=A9
+ 0002:000001C8 00000006 C=ICODE    S=.itext   G=(none)   M=sThirdParty ACBP=A9
+ 0002:000001D0 00000006 C=ICODE    S=.itext   G=(none)   M=sGlyphUtils ACBP=A9
+ 0002:000001D8 00000006 C=ICODE    S=.itext   G=(none)   M=sMonthCalendar ACBP=A9
+ 0002:000001E0 00000006 C=ICODE    S=.itext   G=(none)   M=sGraphUtils ACBP=A9
+ 0002:000001E8 00000006 C=ICODE    S=.itext   G=(none)   M=sVclUtils ACBP=A9
+ 0002:000001F0 00000006 C=ICODE    S=.itext   G=(none)   M=acDials  ACBP=A9
+ 0002:000001F8 00000006 C=ICODE    S=.itext   G=(none)   M=sSkinMenus ACBP=A9
+ 0002:00000200 00000006 C=ICODE    S=.itext   G=(none)   M=sStyleSimply ACBP=A9
+ 0002:00000208 00000006 C=ICODE    S=.itext   G=(none)   M=sSkinManager ACBP=A9
+ 0002:00000210 00000006 C=ICODE    S=.itext   G=(none)   M=acPNG    ACBP=A9
+ 0002:00000218 00000006 C=ICODE    S=.itext   G=(none)   M=acSBUtils ACBP=A9
+ 0002:00000220 00000006 C=ICODE    S=.itext   G=(none)   M=sSkinProvider ACBP=A9
+ 0002:00000228 00000006 C=ICODE    S=.itext   G=(none)   M=acntUtils ACBP=A9
+ 0002:00000230 00000006 C=ICODE    S=.itext   G=(none)   M=sMessages ACBP=A9
+ 0002:00000238 00000006 C=ICODE    S=.itext   G=(none)   M=Halcn6db ACBP=A9
+ 0002:00000240 00000006 C=ICODE    S=.itext   G=(none)   M=gs6_disk ACBP=A9
+ 0002:00000248 00000006 C=ICODE    S=.itext   G=(none)   M=gs6_date ACBP=A9
+ 0002:00000250 00000006 C=ICODE    S=.itext   G=(none)   M=gs6_glbl ACBP=A9
+ 0002:00000258 00000006 C=ICODE    S=.itext   G=(none)   M=AnsiStrings ACBP=A9
+ 0002:00000260 00000006 C=ICODE    S=.itext   G=(none)   M=gs6_tool ACBP=A9
+ 0002:00000268 00000006 C=ICODE    S=.itext   G=(none)   M=gs6_sql  ACBP=A9
+ 0002:00000270 00000006 C=ICODE    S=.itext   G=(none)   M=gs6_fctn ACBP=A9
+ 0002:00000278 00000006 C=ICODE    S=.itext   G=(none)   M=gs6_lcal ACBP=A9
+ 0002:00000280 00000006 C=ICODE    S=.itext   G=(none)   M=gs6_dbf  ACBP=A9
+ 0002:00000288 00000006 C=ICODE    S=.itext   G=(none)   M=gs6_dbsy ACBP=A9
+ 0002:00000290 0000002F C=ICODE    S=.itext   G=(none)   M=uDataModule ACBP=A9
+ 0002:000002C0 00000006 C=ICODE    S=.itext   G=(none)   M=xlcUtils ACBP=A9
+ 0002:000002C8 00000006 C=ICODE    S=.itext   G=(none)   M=xlEngine ACBP=A9
+ 0002:000002D0 00000006 C=ICODE    S=.itext   G=(none)   M=xlStdOPack ACBP=A9
+ 0002:000002D8 00000006 C=ICODE    S=.itext   G=(none)   M=OleCtrls ACBP=A9
+ 0002:000002E0 00000006 C=ICODE    S=.itext   G=(none)   M=AxCtrls  ACBP=A9
+ 0002:000002E8 00000006 C=ICODE    S=.itext   G=(none)   M=DdeMan   ACBP=A9
+ 0002:000002F0 00000006 C=ICODE    S=.itext   G=(none)   M=OleCtnrs ACBP=A9
+ 0002:000002F8 00000006 C=ICODE    S=.itext   G=(none)   M=xlPivotOPack ACBP=A9
+ 0002:00000300 00000006 C=ICODE    S=.itext   G=(none)   M=xlProOPack ACBP=A9
+ 0002:00000308 00000006 C=ICODE    S=.itext   G=(none)   M=acAlphaHints ACBP=A9
+ 0002:00000310 00000006 C=ICODE    S=.itext   G=(none)   M=DBTables ACBP=A9
+ 0002:00000318 00000006 C=ICODE    S=.itext   G=(none)   M=sDBNavigator ACBP=A9
+ 0002:00000320 000000AC C=ICODE    S=.itext   G=(none)   M=Analiz   ACBP=A9
+ 0003:00000000 00000024 C=DATA     S=.data    G=DGROUP   M=SysInit  ACBP=A9
+ 0003:00000024 0000000C C=DATA     S=.data    G=DGROUP   M=Windows  ACBP=A9
+ 0004:00000000 00000004 C=BSS      S=.bss     G=DGROUP   M=SysInit  ACBP=A9
+ 0004:00000004 00000008 C=BSS      S=.bss     G=DGROUP   M=Windows  ACBP=A9
+ 0004:0000000C 0000000C C=BSS      S=.bss     G=DGROUP   M=uDataModule ACBP=A9
+ 0004:00000018 00000004 C=BSS      S=.bss     G=DGROUP   M=Unit5    ACBP=A9
+ 0004:0000001C 00000004 C=BSS      S=.bss     G=DGROUP   M=uAddEditOTKLForm ACBP=A9
+ 0004:00000020 00000004 C=BSS      S=.bss     G=DGROUP   M=uViewForm ACBP=A9
+ 0004:00000024 00001F54 C=BSS      S=.bss     G=DGROUP   M=uAboutForm ACBP=A9
+ 0004:00001F78 00000004 C=BSS      S=.bss     G=DGROUP   M=uMainForm ACBP=A9
+ 0004:00001F7C 00000004 C=BSS      S=.bss     G=DGROUP   M=uWaitForm ACBP=A9
+ 0004:00001F80 00000004 C=BSS      S=.bss     G=DGROUP   M=uAddEditLINEForm ACBP=A9
+ 0004:00001F84 00000004 C=BSS      S=.bss     G=DGROUP   M=uAddEditPSForm ACBP=A9
+ 0004:00001F88 00000004 C=BSS      S=.bss     G=DGROUP   M=uAddEditRESForm ACBP=A9
+ 0004:00001F8C 00000004 C=BSS      S=.bss     G=DGROUP   M=uSpravForm ACBP=A9
+
+
+  Address             Publics by Name
+
+ 0002:00000308       acAlphaHints.acAlphaHints
+ 0001:000023BC       acAlphaHints.Finalization
+ 0002:000001F0       acDials.acDials
+ 0001:000009E4       acDials.Finalization
+ 0002:000001C0       acGlow.acGlow
+ 0001:000009B4       acGlow.Finalization
+ 0002:00000228       acntUtils.acntUtils
+ 0001:00000A2C       acntUtils.Finalization
+ 0002:00000210       acPNG.acPNG
+ 0001:00000A14       acPNG.Finalization
+ 0002:00000218       acSBUtils.acSBUtils
+ 0001:00000A1C       acSBUtils.Finalization
+ 0002:00000198       acShellCtrls.acShellCtrls
+ 0001:0000097C       acShellCtrls.Finalization
+ 0002:00000108       ActnList.ActnList
+ 0001:0000066C       ActnList.Finalization
+ 0002:00000320       Analiz.Analiz
+ 0001:0000C1A4       Analiz.Finalization
+ 0002:00000258       AnsiStrings.AnsiStrings
+ 0001:00000A94       AnsiStrings.Finalization
+ 0002:000002E0       AxCtrls.AxCtrls
+ 0001:00002394       AxCtrls.Finalization
+ 0002:00000140       Buttons.Buttons
+ 0001:000008DC       Buttons.Finalization
+ 0001:000008D4       Buttons.TSpeedButton.SetDown
+ 0002:00000060       Classes.Classes
+ 0001:000003EC       Classes.Finalization
+ 0001:00000354       Classes.TComponent.BeforeDestruction
+ 0001:00000364       Classes.TComponent.Loaded
+ 0001:0000035C       Classes.TComponent.Notification
+ 0001:0000039C       Classes.TComponent.QueryInterface
+ 0001:0000038C       Classes.TComponent.SafeCallException
+ 0001:0000037C       Classes.TComponent.SetName
+ 0001:00000384       Classes.TComponent.UpdateAction
+ 0001:00000394       Classes.TComponent.UpdateRegistry
+ 0001:00000374       Classes.TComponent.ValidateRename
+ 0001:0000036C       Classes.TComponent.WriteState
+ 0001:000003AC       Classes.TDataModule.AfterConstruction
+ 0001:000003BC       Classes.TDataModule.BeforeDestruction
+ 0001:000003A4       Classes.TDataModule.Create
+ 0001:000003B4       Classes.TDataModule.CreateNew
+ 0001:000003DC       Classes.TDataModule.DefineProperties
+ 0001:000003C4       Classes.TDataModule.Destroy
+ 0001:000003CC       Classes.TDataModule.DoCreate
+ 0001:000003D4       Classes.TDataModule.DoDestroy
+ 0001:000003E4       Classes.TDataModule.ReadState
+ 0001:0000033C       Classes.TPersistent.Assign
+ 0001:00000344       Classes.TPersistent.AssignTo
+ 0002:00000058       Classes.TThread.Create@
+ 0001:0000034C       Classes.TThread.Destroy@
+ 0002:000000C8       Clipbrd.Clipbrd
+ 0001:0000049C       Clipbrd.Finalization
+ 0002:000000D8       ComCtrls.ComCtrls
+ 0001:000004AC       ComCtrls.Finalization
+ 0002:00000130       ComObj.ComObj
+ 0001:0000085C       ComObj.Finalization
+ 0002:000000F8       Controls.Controls
+ 0001:0000065C       Controls.Finalization
+ 0001:0000052C       Controls.TControl.CreateTouchManager
+ 0001:000004DC       Controls.TControl.GetAction
+ 0001:000004CC       Controls.TControl.GetDragImages
+ 0001:000004D4       Controls.TControl.GetEnabled
+ 0001:0000053C       Controls.TControl.GetFloating
+ 0001:00000544       Controls.TControl.GetFloatingDockSiteClass
+ 0001:0000050C       Controls.TControl.GetText
+ 0001:0000054C       Controls.TControl.InitiateAction
+ 0001:00000534       Controls.TControl.Loaded
+ 0001:000004EC       Controls.TControl.SetAutoSize
+ 0001:0000051C       Controls.TControl.SetBiDiMode
+ 0001:000004E4       Controls.TControl.SetDragMode
+ 0001:00000504       Controls.TControl.SetEnabled
+ 0001:000004F4       Controls.TControl.SetName
+ 0001:00000524       Controls.TControl.SetParentBiDiMode
+ 0001:00000514       Controls.TControl.SetText
+ 0001:000004FC       Controls.TControl.SetVisible
+ 0001:00000634       Controls.TWinControl.AssignTo
+ 0001:0000063C       Controls.TWinControl.CanAutoSize
+ 0001:00000624       Controls.TWinControl.CanResize
+ 0001:0000062C       Controls.TWinControl.ConstrainedResize
+ 0001:00000584       Controls.TWinControl.CreateHandle
+ 0001:00000564       Controls.TWinControl.CreateWindowHandle
+ 0001:0000058C       Controls.TWinControl.CustomAlignInsertBefore
+ 0001:00000594       Controls.TWinControl.CustomAlignPosition
+ 0001:000005B4       Controls.TWinControl.DefaultHandler
+ 0001:0000056C       Controls.TWinControl.DefineProperties
+ 0001:0000059C       Controls.TWinControl.DestroyHandle
+ 0001:0000057C       Controls.TWinControl.DestroyWindowHandle
+ 0001:00000574       Controls.TWinControl.DestroyWnd
+ 0001:0000064C       Controls.TWinControl.DockReplaceDockClient
+ 0001:0000061C       Controls.TWinControl.FindNextControl
+ 0001:0000060C       Controls.TWinControl.GetClientOrigin
+ 0001:00000614       Controls.TWinControl.GetClientRect
+ 0001:00000604       Controls.TWinControl.GetControlExtents
+ 0001:000005D4       Controls.TWinControl.GetDeviceContext
+ 0001:000005FC       Controls.TWinControl.GetHandle
+ 0001:000005DC       Controls.TWinControl.Invalidate
+ 0001:0000055C       Controls.TWinControl.Notification
+ 0001:00000554       Controls.TWinControl.ReadState
+ 0001:000005EC       Controls.TWinControl.Repaint
+ 0001:000005BC       Controls.TWinControl.RequestAlign
+ 0001:000005C4       Controls.TWinControl.SetBounds
+ 0001:000005F4       Controls.TWinControl.SetFocus
+ 0001:00000644       Controls.TWinControl.SetParentBackground
+ 0001:000005A4       Controls.TWinControl.SetParentDoubleBuffered
+ 0001:000005CC       Controls.TWinControl.ShowControl
+ 0001:000005E4       Controls.TWinControl.Update
+ 0001:00000654       Controls.TWinControl.UpdateControlOriginalParentSize
+ 0001:000005AC       Controls.TWinControl.WndProc
+ 0002:00000138       DB.DB
+ 0001:000008CC       DB.Finalization
+ 0001:000008B4       DB.TDataSet.Append
+ 0001:000008BC       DB.TDataSet.Delete
+ 0001:000008AC       DB.TDataSet.Edit
+ 0001:0000088C       DB.TDataSet.FieldByName
+ 0001:00000894       DB.TDataSet.First
+ 0001:00000884       DB.TDataSet.GetFieldCount
+ 0001:0000089C       DB.TDataSet.Next
+ 0001:000008A4       DB.TDataSet.Refresh
+ 0001:000008C4       DB.TDataSet.SetFields
+ 0001:0000087C       DB.TDataSource.SetDataSet
+ 0001:00000874       DB.TField.GetEditText
+ 0001:00000864       DB.TFieldDefs.GetFieldDef
+ 0001:0000086C       DB.TFields.GetField
+ 0002:00000158       DBCtrls.DBCtrls
+ 0001:00000924       DBCtrls.Finalization
+ 0001:00000904       DBCtrls.TDBLookupControl.SetKeyFieldName
+ 0001:0000090C       DBCtrls.TDBLookupControl.SetKeyValue
+ 0001:00000914       DBCtrls.TDBLookupControl.SetListFieldName
+ 0001:0000091C       DBCtrls.TDBLookupControl.SetListSource
+ 0001:00000A44       DBGrids.TColumn.GetAlignment
+ 0001:00000A4C       DBGrids.TColumn.GetField
+ 0001:00000A3C       DBGrids.TColumnTitle.GetCaption
+ 0001:00000A54       DBGrids.TCustomDBGrid.GetDataSource
+ 0001:00000A5C       DBGrids.TCustomDBGrid.SetDataSource
+ 0002:00000150       DBLogDlg.DBLogDlg
+ 0001:000008FC       DBLogDlg.Finalization
+ 0002:00000148       DBPWDlg.DBPWDlg
+ 0001:000008F4       DBPWDlg.Finalization
+ 0002:00000310       DBTables.DBTables
+ 0001:000023C4       DBTables.Finalization
+ 0002:000002E8       DdeMan.DdeMan
+ 0001:0000239C       DdeMan.Finalization
+ 0002:000000E0       Dialogs.Dialogs
+ 0001:000004B4       Dialogs.Finalization
+ 0002:000000D0       ExtCtrls.ExtCtrls
+ 0001:000004A4       ExtCtrls.Finalization
+ 0002:00000188       ExtDlgs.ExtDlgs
+ 0001:0000095C       ExtDlgs.Finalization
+ 0001:000004BC       FlatSB.Finalization
+ 0002:000000E8       FlatSB.FlatSB
+ 0001:0000084C       FMTBcd.Finalization
+ 0002:00000120       FMTBcd.FMTBcd
+ 0001:0000083C       Forms.Finalization
+ 0002:00000110       Forms.Forms
+ 0001:0000081C       Forms.TApplication.CreateForm
+ 0001:0000082C       Forms.TApplication.GetExeName
+ 0001:00000814       Forms.TApplication.Initialize
+ 0001:0000080C       Forms.TApplication.ProcessMessages
+ 0001:00000824       Forms.TApplication.Run
+ 0001:00000834       Forms.TApplication.SetMainFormOnTaskBar
+ 0001:00000804       Forms.TApplication.SetTitle
+ 0001:000006E4       Forms.TCustomForm.AfterConstruction
+ 0001:0000076C       Forms.TCustomForm.AlignControls
+ 0001:000006F4       Forms.TCustomForm.BeforeDestruction
+ 0001:000007C4       Forms.TCustomForm.Close
+ 0001:000007CC       Forms.TCustomForm.CloseQuery
+ 0001:000006DC       Forms.TCustomForm.Create
+ 0001:000006EC       Forms.TCustomForm.CreateNew
+ 0001:0000077C       Forms.TCustomForm.CreateParams
+ 0001:0000078C       Forms.TCustomForm.CreateWindowHandle
+ 0001:00000784       Forms.TCustomForm.CreateWnd
+ 0001:000007A4       Forms.TCustomForm.DefaultHandler
+ 0001:0000072C       Forms.TCustomForm.DefineProperties
+ 0001:000006FC       Forms.TCustomForm.Destroy
+ 0001:00000794       Forms.TCustomForm.DestroyHandle
+ 0001:0000079C       Forms.TCustomForm.DestroyWindowHandle
+ 0001:00000704       Forms.TCustomForm.DoCreate
+ 0001:0000070C       Forms.TCustomForm.DoDestroy
+ 0001:00000774       Forms.TCustomForm.GetCanvas
+ 0001:00000734       Forms.TCustomForm.GetClientRect
+ 0001:0000073C       Forms.TCustomForm.GetFloating
+ 0001:00000714       Forms.TCustomForm.Loaded
+ 0001:0000071C       Forms.TCustomForm.Notification
+ 0001:000007B4       Forms.TCustomForm.PaintWindow
+ 0001:000007FC       Forms.TCustomForm.QueryInterface
+ 0001:00000724       Forms.TCustomForm.ReadState
+ 0001:000007F4       Forms.TCustomForm.RequestAlign
+ 0001:000007BC       Forms.TCustomForm.Resizing
+ 0001:000007DC       Forms.TCustomForm.SetFocus
+ 0001:000007AC       Forms.TCustomForm.SetFocusedControl
+ 0001:00000754       Forms.TCustomForm.SetParent
+ 0001:00000744       Forms.TCustomForm.SetParentBiDiMode
+ 0001:000007D4       Forms.TCustomForm.Show
+ 0001:000007E4       Forms.TCustomForm.ShowModal
+ 0001:000007EC       Forms.TCustomForm.UpdateActions
+ 0001:0000075C       Forms.TCustomForm.ValidateRename
+ 0001:0000074C       Forms.TCustomForm.WantChildKey
+ 0001:00000764       Forms.TCustomForm.WndProc
+ 0001:000006BC       Forms.TCustomFrame.Create
+ 0001:000006C4       Forms.TCustomFrame.CreateParams
+ 0001:000006CC       Forms.TCustomFrame.PaintWindow
+ 0001:000006D4       Forms.TCustomFrame.SetParent
+ 0001:000006B4       Forms.TScrollingWinControl.AdjustClientRect
+ 0001:00000684       Forms.TScrollingWinControl.AlignControls
+ 0001:0000068C       Forms.TScrollingWinControl.AutoScrollEnabled
+ 0001:000006A4       Forms.TScrollingWinControl.AutoScrollInView
+ 0001:0000067C       Forms.TScrollingWinControl.CreateWnd
+ 0001:00000674       Forms.TScrollingWinControl.Destroy
+ 0001:00000694       Forms.TScrollingWinControl.DoGesture
+ 0001:0000069C       Forms.TScrollingWinControl.DoGetGestureOptions
+ 0001:000006AC       Forms.TScrollingWinControl.Resizing
+ 0001:0000047C       Graphics.Finalization
+ 0002:000000B0       Graphics.Graphics
+ 0001:0000045C       Graphics.TBitmap.Create
+ 0001:00000464       Graphics.TBitmap.GetCanvas
+ 0001:0000046C       Graphics.TBitmap.GetScanline
+ 0001:00000474       Graphics.TBitmap.SetPixelFormat
+ 0001:0000044C       Graphics.TBrush.SetColor
+ 0001:00000454       Graphics.TCustomCanvas.TextWidth
+ 0001:0000043C       Graphics.TFont.SetColor
+ 0001:00000444       Graphics.TPen.SetColor
+ 0001:00000484       GraphUtil.Finalization
+ 0002:000000B8       GraphUtil.GraphUtil
+ 0001:0000094C       Grids.TCustomGrid.SetRowHeights
+ 0001:00000A84       gs6_date.Finalization
+ 0002:00000248       gs6_date.gs6_date
+ 0001:00000ABC       gs6_dbf.Finalization
+ 0002:00000280       gs6_dbf.gs6_dbf
+ 0001:00000AC4       gs6_dbsy.Finalization
+ 0002:00000288       gs6_dbsy.gs6_dbsy
+ 0001:00000A7C       gs6_disk.Finalization
+ 0002:00000240       gs6_disk.gs6_disk
+ 0001:00000AAC       gs6_fctn.Finalization
+ 0002:00000270       gs6_fctn.gs6_fctn
+ 0001:00000A8C       gs6_glbl.Finalization
+ 0002:00000250       gs6_glbl.gs6_glbl
+ 0001:00000AB4       gs6_lcal.Finalization
+ 0002:00000278       gs6_lcal.gs6_lcal
+ 0001:00000AA4       gs6_sql.Finalization
+ 0002:00000268       gs6_sql.gs6_sql
+ 0001:00000A9C       gs6_tool.Finalization
+ 0002:00000260       gs6_tool.gs6_tool
+ 0001:00000A74       Halcn6db.Finalization
+ 0002:00000238       Halcn6db.Halcn6db
+ 0001:00000A64       Halcn6db.THalcyonDataSet.SetDatabaseName
+ 0001:00000A6C       Halcn6db.THalcyonDataSet.SetTableName
+ 0001:0000040C       HelpIntfs.Finalization
+ 0002:00000080       HelpIntfs.HelpIntfs
+ 0001:0000042C       IniFiles.Finalization
+ 0002:000000A0       IniFiles.IniFiles
+ 0001:00000424       IOUtils.Finalization
+ 0002:00000098       IOUtils.IOUtils
+ 0002:00000090       IOUtils.TPath.Create@
+ 0001:0000041C       IOUtils.TPath.Destroy@
+ 0001:00000934       jpeg.Finalization
+ 0002:00000168       jpeg.jpeg
+ 0001:000008E4       Mask.TCustomMaskEdit.GetText
+ 0001:000008EC       Mask.TCustomMaskEdit.SetText
+ 0001:000004C4       Menus.Finalization
+ 0002:000000F0       Menus.Menus
+ 0001:00000414       MultiMon.Finalization
+ 0002:00000088       MultiMon.MultiMon
+ 0001:000023A4       OleCtnrs.Finalization
+ 0002:000002F0       OleCtnrs.OleCtnrs
+ 0001:0000238C       OleCtrls.Finalization
+ 0002:000002D8       OleCtrls.OleCtrls
+ 0001:00000954       pngimage.Finalization
+ 0002:00000180       pngimage.pngimage
+ 0001:00000494       Printers.Finalization
+ 0002:000000C0       Printers.Printers
+ 0001:00000434       Registry.Finalization
+ 0002:000000A8       Registry.Registry
+ 0001:000009A4       sCalcUnit.Finalization
+ 0002:000001B0       sCalcUnit.sCalcUnit
+ 0001:00000964       sComboBoxes.Finalization
+ 0002:00000190       sComboBoxes.sComboBoxes
+ 0001:0000092C       sConst.Finalization
+ 0002:00000160       sConst.sConst
+ 0001:00000944       sDateUtils.Finalization
+ 0002:00000178       sDateUtils.sDateUtils
+ 0001:000023D4       sDBNavigator.Finalization
+ 0002:00000318       sDBNavigator.sDBNavigator
+ 0001:000023CC       sDBNavigator.TsDBNavigator.SetDataSource
+ 0001:0000093C       sDefaults.Finalization
+ 0002:00000170       sDefaults.sDefaults
+ 0001:00000984       sDialogs.Finalization
+ 0002:000001A0       sDialogs.sDialogs
+ 0001:0000096C       sGauge.TsGauge.SetProgress
+ 0001:000009C4       sGlyphUtils.Finalization
+ 0002:000001D0       sGlyphUtils.sGlyphUtils
+ 0001:000009AC       sGradient.Finalization
+ 0002:000001B8       sGradient.sGradient
+ 0001:000009D4       sGraphUtils.Finalization
+ 0002:000001E0       sGraphUtils.sGraphUtils
+ 0001:0000048C       ShellAPI.SHFileOperation
+ 0001:00000A34       sMessages.Finalization
+ 0002:00000230       sMessages.sMessages
+ 0001:000009CC       sMonthCalendar.Finalization
+ 0002:000001D8       sMonthCalendar.sMonthCalendar
+ 0001:0000098C       sPopupClndr.Finalization
+ 0002:000001A8       sPopupClndr.sPopupClndr
+ 0001:00000854       SqlTimSt.Finalization
+ 0002:00000128       SqlTimSt.SqlTimSt
+ 0001:00000A0C       sSkinManager.Finalization
+ 0002:00000208       sSkinManager.sSkinManager
+ 0001:000009FC       sSkinManager.TsSkinManager.SetHueOffset
+ 0001:00000A04       sSkinManager.TsSkinManager.SetSaturation
+ 0001:000009EC       sSkinMenus.Finalization
+ 0002:000001F8       sSkinMenus.sSkinMenus
+ 0001:00000A24       sSkinProvider.Finalization
+ 0002:00000220       sSkinProvider.sSkinProvider
+ 0001:00000974       sSpinEdit.TsSpinEdit.SetValue
+ 0001:000009F4       sStyleSimply.Finalization
+ 0002:00000200       sStyleSimply.sStyleSimply
+ 0001:000009BC       sThirdParty.Finalization
+ 0002:000001C8       sThirdParty.sThirdParty
+ 0001:00000994       sTooledit.TsCustomDateEdit.GetDate
+ 0001:0000099C       sTooledit.TsCustomDateEdit.SetDate
+ 0001:000009DC       sVclUtils.Finalization
+ 0002:000001E8       sVclUtils.sVclUtils
+ 0001:000003FC       SyncObjs.Finalization
+ 0002:00000070       SyncObjs.SyncObjs
+ 0001:00000194       SysInit.@InitExe
+ 0001:00000180       SysInit.GetModuleHandle
+ 0004:00000000       SysInit.HInstance
+ 0001:00000188       SysInit.InitializeModule
+ 0003:00000008       SysInit.Module
+ 0003:00000004       SysInit.PtrToNil
+ 0003:00000000       SysInit.TlsIndex
+ 0001:00000098       System.@AfterConstruction
+ 0001:00000028       System.@BoundErr
+ 0001:00000068       System.@CallDynaInst
+ 0001:00000090       System.@ClassCreate
+ 0001:000000C0       System.@DoneExcept
+ 0001:00000168       System.@DynArrayAsg
+ 0001:00000160       System.@DynArrayClear
+ 0001:000000E8       System.@EnsureUnicodeString
+ 0001:00000020       System.@FillChar
+ 0001:00000158       System.@FinalizeArray
+ 0001:000000D8       System.@Halt0
+ 0001:000000A0       System.@HandleAnyException
+ 0001:000000B0       System.@HandleFinally
+ 0001:000000A8       System.@HandleOnException
+ 0001:00000030       System.@IntOver
+ 0001:00000060       System.@IsClass
+ 0001:000000E0       System.@LStrClr
+ 0001:00000120       System.@LStrFromUStr
+ 0001:000000B8       System.@RaiseExcept
+ 0001:00000018       System.@ROUND
+ 0001:000000D0       System.@StartExe
+ 0001:000000C8       System.@TryFinallyExit
+ 0001:000000F0       System.@UStrAddRef
+ 0001:00000100       System.@UStrArrayClr
+ 0001:00000108       System.@UStrAsg
+ 0001:00000130       System.@UStrCat
+ 0001:00000138       System.@UStrCat3
+ 0001:00000140       System.@UStrCatN
+ 0001:000000F8       System.@UStrClr
+ 0001:00000148       System.@UStrCopy
+ 0001:00000110       System.@UStrLAsg
+ 0001:00000128       System.@UStrLen
+ 0001:00000118       System.@UStrToPWChar
+ 0001:00000178       System.Finalization
+ 0001:00000000       System.ParamStr
+ 0001:00000150       System.Pos
+ 0001:00000008       System.Random
+ 0001:00000170       System.RegisterModule
+ 0001:00000010       System.Sqrt
+ 0002:00000000       System.System
+ 0001:00000080       System.TObject.AfterConstruction
+ 0001:00000078       System.TObject.DefaultHandler
+ 0001:00000088       System.TObject.Dispatch
+ 0001:00000050       System.TObject.Equals
+ 0001:00000048       System.TObject.Free
+ 0001:00000040       System.TObject.FreeInstance
+ 0001:00000058       System.TObject.GetHashCode
+ 0001:00000038       System.TObject.NewInstance
+ 0001:00000070       System.TObject.ToString
+ 0001:000002E4       SysUtils.BytesOf
+ 0001:00000294       SysUtils.DateTimeToStr
+ 0001:0000028C       SysUtils.DateToStr
+ 0001:00000274       SysUtils.DirectoryExists
+ 0001:000002AC       SysUtils.Exception.Create
+ 0002:00000030       SysUtils.Exception.Create@
+ 0001:000002B4       SysUtils.Exception.Destroy@
+ 0001:000002BC       SysUtils.ExcludeTrailingBackslash
+ 0001:0000027C       SysUtils.ExtractFilePath
+ 0001:000002F4       SysUtils.Finalization
+ 0001:0000029C       SysUtils.FormatDateTime
+ 0001:00000264       SysUtils.IntToStr
+ 0001:000002EC       SysUtils.StringOf
+ 0001:00000284       SysUtils.StrPCopy
+ 0001:000002A4       SysUtils.StrToDate
+ 0001:0000026C       SysUtils.StrToInt
+ 0002:00000038       SysUtils.SysUtils
+ 0001:000002CC       SysUtils.TEncoding.Convert
+ 0002:00000028       SysUtils.TEncoding.Create@
+ 0001:000002D4       SysUtils.TEncoding.Destroy@
+ 0001:000002DC       SysUtils.TEncoding.GetEncoding
+ 0002:00000020       SysUtils.TLanguages.Create@
+ 0001:000002C4       SysUtils.TLanguages.Destroy@
+ 0001:0000025C       SysUtils.Trim
+ 0001:00000664       Themes.Finalization
+ 0002:00000100       Themes.Themes
+ 0002:00000068       TimeSpan.TTimeSpan.Create@
+ 0001:000003F4       TimeSpan.TTimeSpan.Destroy@
+ 0001:00000334       TypInfo.Finalization
+ 0002:00000050       TypInfo.TypInfo
+ 0001:00006034       uAboutForm..TAboutForm
+ 0004:00000024       uAboutForm.AboutForm
+ 0004:00000030       uAboutForm.b
+ 0004:00000FD4       uAboutForm.b1
+ 0004:00000028       uAboutForm.bit
+ 0001:000065DC       uAboutForm.BitMapToPointer
+ 0004:0000002C       uAboutForm.bitp
+ 0001:00006624       uAboutForm.TAboutForm.CreateParams
+ 0001:00006654       uAboutForm.TAboutForm.FormCreate
+ 0001:0000662C       uAboutForm.TAboutForm.FormKeyPress
+ 0001:00006634       uAboutForm.TAboutForm.FormMouseDown
+ 0001:00006B2C       uAboutForm.TAboutForm.FormMouseMove
+ 0001:00006640       uAboutForm.TAboutForm.FormShow
+ 0001:00006644       uAboutForm.TAboutForm.ImageButtonClick
+ 0001:0000664C       uAboutForm.TAboutForm.ImageButtonMouseEnter
+ 0001:00006650       uAboutForm.TAboutForm.ImageButtonMouseLeave
+ 0001:000067D0       uAboutForm.TAboutForm.Timer1Timer
+ 0001:00007D80       uAddEditLINEForm..TAddEditLINEForm
+ 0004:00001F80       uAddEditLINEForm.AddEditLINEForm
+ 0001:0000866C       uAddEditLINEForm.TAddEditLINEForm.btnSaveClick
+ 0001:0000843C       uAddEditLINEForm.TAddEditLINEForm.Create
+ 0001:000083BC       uAddEditLINEForm.TAddEditLINEForm.Create
+ 0001:00008600       uAddEditLINEForm.TAddEditLINEForm.FormKeyUp
+ 0001:0000875C       uAddEditLINEForm.TAddEditLINEForm.GetDateVvoda
+ 0001:00008860       uAddEditLINEForm.TAddEditLINEForm.GetKODPS
+ 0001:000089BC       uAddEditLINEForm.TAddEditLINEForm.GetNumber
+ 0001:00008AA0       uAddEditLINEForm.TAddEditLINEForm.sDBNavigatorClick
+ 0001:00008780       uAddEditLINEForm.TAddEditLINEForm.SetDateVvoda
+ 0001:0000887C       uAddEditLINEForm.TAddEditLINEForm.SetKODPS
+ 0001:000089D4       uAddEditLINEForm.TAddEditLINEForm.SetNumber
+ 0001:000023DC       uAddEditOTKLForm..TAddEditOTKLForm
+ 0004:0000001C       uAddEditOTKLForm.AddEditOTKLForm
+ 0001:00003944       uAddEditOTKLForm.TAddEditOTKLForm.btnSaveClick
+ 0001:00003A24       uAddEditOTKLForm.TAddEditOTKLForm.cmbListPSClick
+ 0001:00002D38       uAddEditOTKLForm.TAddEditOTKLForm.Create
+ 0001:00002DB4       uAddEditOTKLForm.TAddEditOTKLForm.Create
+ 0001:00002F50       uAddEditOTKLForm.TAddEditOTKLForm.FormCreate
+ 0001:00003AD8       uAddEditOTKLForm.TAddEditOTKLForm.GetDate
+ 0001:00004084       uAddEditOTKLForm.TAddEditOTKLForm.GeTIME_VL
+ 0001:0000433C       uAddEditOTKLForm.TAddEditOTKLForm.GetKOD
+ 0001:00003BD0       uAddEditOTKLForm.TAddEditOTKLForm.GetKODPS
+ 0001:00003CCC       uAddEditOTKLForm.TAddEditOTKLForm.GetNumber
+ 0001:00004420       uAddEditOTKLForm.TAddEditOTKLForm.GetPrichina
+ 0001:0000416C       uAddEditOTKLForm.TAddEditOTKLForm.GetPROD_OL
+ 0001:00004254       uAddEditOTKLForm.TAddEditOTKLForm.GetPROD_OT
+ 0001:00003DCC       uAddEditOTKLForm.TAddEditOTKLForm.GetTIME_OL
+ 0001:00003EB4       uAddEditOTKLForm.TAddEditOTKLForm.GetTIME_OT
+ 0001:00003F9C       uAddEditOTKLForm.TAddEditOTKLForm.GetTIME_VT
+ 0001:00004520       uAddEditOTKLForm.TAddEditOTKLForm.sDBNavigatorClick
+ 0001:00003AFC       uAddEditOTKLForm.TAddEditOTKLForm.SetDate
+ 0001:00004354       uAddEditOTKLForm.TAddEditOTKLForm.SetKOD
+ 0001:00003BEC       uAddEditOTKLForm.TAddEditOTKLForm.SetKODPS
+ 0001:00003CE8       uAddEditOTKLForm.TAddEditOTKLForm.SetNumber
+ 0001:00004438       uAddEditOTKLForm.TAddEditOTKLForm.SetPrichina
+ 0001:00004184       uAddEditOTKLForm.TAddEditOTKLForm.SetPROD_OL
+ 0001:0000426C       uAddEditOTKLForm.TAddEditOTKLForm.SetPROD_OT
+ 0001:00003DE4       uAddEditOTKLForm.TAddEditOTKLForm.SetTIME_OL
+ 0001:00003ECC       uAddEditOTKLForm.TAddEditOTKLForm.SetTIME_OT
+ 0001:0000409C       uAddEditOTKLForm.TAddEditOTKLForm.SetTIME_VL
+ 0001:00003FB4       uAddEditOTKLForm.TAddEditOTKLForm.SetTIME_VT
+ 0001:00008BD0       uAddEditPSForm..TAddEditPSForm
+ 0004:00001F84       uAddEditPSForm.AddEditPSForm
+ 0001:000093D0       uAddEditPSForm.TAddEditPSForm.btnSaveClick
+ 0001:0000921C       uAddEditPSForm.TAddEditPSForm.Create
+ 0001:000091A4       uAddEditPSForm.TAddEditPSForm.Create
+ 0001:00009364       uAddEditPSForm.TAddEditPSForm.FormKeyUp
+ 0001:000094B4       uAddEditPSForm.TAddEditPSForm.GetKODPS
+ 0001:0000958C       uAddEditPSForm.TAddEditPSForm.GetKODRes
+ 0001:00009688       uAddEditPSForm.TAddEditPSForm.GetName
+ 0001:00009764       uAddEditPSForm.TAddEditPSForm.sDBNavigatorClick
+ 0001:000094C4       uAddEditPSForm.TAddEditPSForm.SetKODPS
+ 0001:000095A8       uAddEditPSForm.TAddEditPSForm.SetKODRes
+ 0001:000096A0       uAddEditPSForm.TAddEditPSForm.SetName
+ 0001:00009880       uAddEditRESForm..TAddEditRESForm
+ 0004:00001F88       uAddEditRESForm.AddEditRESForm
+ 0001:00009FA0       uAddEditRESForm.TAddEditRESForm.btnSaveClick
+ 0001:00009E54       uAddEditRESForm.TAddEditRESForm.Create
+ 0001:00009DD8       uAddEditRESForm.TAddEditRESForm.Create
+ 0001:00009F34       uAddEditRESForm.TAddEditRESForm.FormKeyUp
+ 0001:0000A074       uAddEditRESForm.TAddEditRESForm.GetKOD
+ 0001:0000A150       uAddEditRESForm.TAddEditRESForm.GetName
+ 0001:0000A230       uAddEditRESForm.TAddEditRESForm.sDBNavigatorClick
+ 0001:0000A08C       uAddEditRESForm.TAddEditRESForm.SetKOD
+ 0001:0000A168       uAddEditRESForm.TAddEditRESForm.SetName
+ 0004:00000014       uDataModule..2
+ 0001:00000ACC       uDataModule..TDataModule1
+ 0001:0000142C       uDataModule.CloseTables
+ 0004:0000000C       uDataModule.DataModule1
+ 0001:00001D40       uDataModule.Finalization
+ 0001:00001978       uDataModule.init
+ 0001:000015CC       uDataModule.OpenTables
+ 0001:00001A0C       uDataModule.TDataModule1.DBF_JURCalcFields
+ 0002:00000290       uDataModule.uDataModule
+ 0004:00000010       uDataModule.WorkFolder
+ 0001:00001D8C       uDBGridFrame..TDBGridFrame
+ 0001:00002254       uDBGridFrame.TDBGridFrame.DBGridDrawColumnCellDefault
+ 0001:000020A8       uDBGridFrame.TDBGridFrame.DBGridDrawColumnCellJUR
+ 0001:00006CD4       uMainForm..TMainForm
+ 0004:00001F78       uMainForm.MainForm
+ 0001:00007610       uMainForm.TMainForm.btn3Click
+ 0001:00007670       uMainForm.TMainForm.btn4Click
+ 0001:000075B0       uMainForm.TMainForm.btnEditClick
+ 0001:000076D0       uMainForm.TMainForm.btnViewSpravClick
+ 0001:000074DC       uMainForm.TMainForm.FormCreate
+ 0001:000074E4       uMainForm.TMainForm.FormKeyUp
+ 0001:00007550       uMainForm.TMainForm.lblCopyrightClick
+ 0001:00007730       uMainForm.TMainForm.sTrackBar1Change
+ 0001:000077D8       uMainForm.TMainForm.sTrackBar1MouseUp
+ 0001:00007804       uMainForm.TMainForm.sTrackBar2Change
+ 0004:00000018       Unit5.Form5
+ 0001:0000A2F4       uSpravForm..TSpravForm
+ 0001:0000B850       uSpravForm.MakeCurrent
+ 0001:0000BB14       uSpravForm.MoveDataBase
+ 0001:0000AC18       uSpravForm.ShowAddEditWindow
+ 0004:00001F8C       uSpravForm.SpravForm
+ 0001:0000B2C4       uSpravForm.TSpravForm.btnAddClick
+ 0001:0000B76C       uSpravForm.TSpravForm.btnCancelClick
+ 0001:0000B2CC       uSpravForm.TSpravForm.btnDelClick
+ 0001:0000B528       uSpravForm.TSpravForm.btnEditClick
+ 0001:0000B7A4       uSpravForm.TSpravForm.btnHelpClick
+ 0001:0000BF10       uSpravForm.TSpravForm.btnStartClick
+ 0001:0000B538       uSpravForm.TSpravForm.btnViewLineClick
+ 0001:0000B5A4       uSpravForm.TSpravForm.btnViewPSClick
+ 0001:0000B618       uSpravForm.TSpravForm.btnViewRESClick
+ 0001:0000AC10       uSpravForm.TSpravForm.CreateParams
+ 0001:0000B530       uSpravForm.TSpravForm.DBGridFrame1DBGridDblClick
+ 0001:0000B684       uSpravForm.TSpravForm.FormCreate
+ 0001:0000B68C       uSpravForm.TSpravForm.FormKeyUp
+ 0001:00004A38       uViewForm..TViewForm
+ 0001:00004F78       uViewForm.GetH
+ 0001:00005090       uViewForm.GetM
+ 0001:000051BC       uViewForm.ShowAddEditWindow
+ 0001:00005DC0       uViewForm.TViewForm.btnAddClick
+ 0001:00005DD8       uViewForm.TViewForm.btnDelClick
+ 0001:00005DC8       uViewForm.TViewForm.btnEditClick
+ 0001:00005DD0       uViewForm.TViewForm.DBGridFrame1DBGridDblClick
+ 0001:00004F40       uViewForm.TViewForm.FormCreate
+ 0004:00000020       uViewForm.ViewForm
+ 0001:000078AC       uWaitForm..TWaitForm
+ 0001:00007CA0       uWaitForm.TWaitForm.Create
+ 0001:00007CD8       uWaitForm.TWaitForm.Create
+ 0001:00007D28       uWaitForm.TWaitForm.SetAllProgress
+ 0001:00007D40       uWaitForm.TWaitForm.SetProgress
+ 0001:00007D58       uWaitForm.TWaitForm.Timer1Timer
+ 0004:00001F7C       uWaitForm.WaitForm
+ 0001:00000404       UxTheme.Finalization
+ 0002:00000078       UxTheme.UxTheme
+ 0001:00000304       Variants.@VarClr
+ 0001:00000314       Variants.@VarFromInt
+ 0001:0000031C       Variants.@VarFromLStr
+ 0001:00000324       Variants.@VarFromUStr
+ 0001:0000030C       Variants.@VarToUStr
+ 0001:0000032C       Variants.Finalization
+ 0002:00000048       Variants.Variants
+ 0001:000002FC       VarUtils.Finalization
+ 0002:00000040       VarUtils.VarUtils
+ 0001:00000844       WideStrings.Finalization
+ 0002:00000118       WideStrings.WideStrings
+ 0004:00000004       Windows..2
+ 0001:000001E0       Windows.CreateDirectory
+ 0001:0000023C       Windows.Finalization
+ 0001:000001E8       Windows.FreeLibrary
+ 0001:000001F0       Windows.GetVersionEx
+ 0004:00000008       Windows.HtmlHelpModule
+ 0001:00000200       Windows.InitVersionInfo
+ 0001:000001F8       Windows.MessageBox
+ 0003:00000024       Windows.Win32MajorVersion
+ 0003:00000028       Windows.Win32MinorVersion
+ 0003:0000002C       Windows.Win32Platform
+ 0002:00000008       Windows.Windows
+ 0001:00002374       xlcUtils.Finalization
+ 0002:000002C0       xlcUtils.xlcUtils
+ 0001:0000237C       xlEngine.Finalization
+ 0002:000002C8       xlEngine.xlEngine
+ 0001:000023AC       xlPivotOPack.Finalization
+ 0002:000002F8       xlPivotOPack.xlPivotOPack
+ 0001:000023B4       xlProOPack.Finalization
+ 0002:00000300       xlProOPack.xlProOPack
+ 0001:00002384       xlStdOPack.Finalization
+ 0002:000002D0       xlStdOPack.xlStdOPack
+
+
+  Address             Publics by Value
+
+ 0001:00000000       System.ParamStr
+ 0001:00000008       System.Random
+ 0001:00000010       System.Sqrt
+ 0001:00000018       System.@ROUND
+ 0001:00000020       System.@FillChar
+ 0001:00000028       System.@BoundErr
+ 0001:00000030       System.@IntOver
+ 0001:00000038       System.TObject.NewInstance
+ 0001:00000040       System.TObject.FreeInstance
+ 0001:00000048       System.TObject.Free
+ 0001:00000050       System.TObject.Equals
+ 0001:00000058       System.TObject.GetHashCode
+ 0001:00000060       System.@IsClass
+ 0001:00000068       System.@CallDynaInst
+ 0001:00000070       System.TObject.ToString
+ 0001:00000078       System.TObject.DefaultHandler
+ 0001:00000080       System.TObject.AfterConstruction
+ 0001:00000088       System.TObject.Dispatch
+ 0001:00000090       System.@ClassCreate
+ 0001:00000098       System.@AfterConstruction
+ 0001:000000A0       System.@HandleAnyException
+ 0001:000000A8       System.@HandleOnException
+ 0001:000000B0       System.@HandleFinally
+ 0001:000000B8       System.@RaiseExcept
+ 0001:000000C0       System.@DoneExcept
+ 0001:000000C8       System.@TryFinallyExit
+ 0001:000000D0       System.@StartExe
+ 0001:000000D8       System.@Halt0
+ 0001:000000E0       System.@LStrClr
+ 0001:000000E8       System.@EnsureUnicodeString
+ 0001:000000F0       System.@UStrAddRef
+ 0001:000000F8       System.@UStrClr
+ 0001:00000100       System.@UStrArrayClr
+ 0001:00000108       System.@UStrAsg
+ 0001:00000110       System.@UStrLAsg
+ 0001:00000118       System.@UStrToPWChar
+ 0001:00000120       System.@LStrFromUStr
+ 0001:00000128       System.@UStrLen
+ 0001:00000130       System.@UStrCat
+ 0001:00000138       System.@UStrCat3
+ 0001:00000140       System.@UStrCatN
+ 0001:00000148       System.@UStrCopy
+ 0001:00000150       System.Pos
+ 0001:00000158       System.@FinalizeArray
+ 0001:00000160       System.@DynArrayClear
+ 0001:00000168       System.@DynArrayAsg
+ 0001:00000170       System.RegisterModule
+ 0001:00000178       System.Finalization
+ 0001:00000180       SysInit.GetModuleHandle
+ 0001:00000188       SysInit.InitializeModule
+ 0001:00000194       SysInit.@InitExe
+ 0001:000001E0       Windows.CreateDirectory
+ 0001:000001E8       Windows.FreeLibrary
+ 0001:000001F0       Windows.GetVersionEx
+ 0001:000001F8       Windows.MessageBox
+ 0001:00000200       Windows.InitVersionInfo
+ 0001:0000023C       Windows.Finalization
+ 0001:0000025C       SysUtils.Trim
+ 0001:00000264       SysUtils.IntToStr
+ 0001:0000026C       SysUtils.StrToInt
+ 0001:00000274       SysUtils.DirectoryExists
+ 0001:0000027C       SysUtils.ExtractFilePath
+ 0001:00000284       SysUtils.StrPCopy
+ 0001:0000028C       SysUtils.DateToStr
+ 0001:00000294       SysUtils.DateTimeToStr
+ 0001:0000029C       SysUtils.FormatDateTime
+ 0001:000002A4       SysUtils.StrToDate
+ 0001:000002AC       SysUtils.Exception.Create
+ 0001:000002B4       SysUtils.Exception.Destroy@
+ 0001:000002BC       SysUtils.ExcludeTrailingBackslash
+ 0001:000002C4       SysUtils.TLanguages.Destroy@
+ 0001:000002CC       SysUtils.TEncoding.Convert
+ 0001:000002D4       SysUtils.TEncoding.Destroy@
+ 0001:000002DC       SysUtils.TEncoding.GetEncoding
+ 0001:000002E4       SysUtils.BytesOf
+ 0001:000002EC       SysUtils.StringOf
+ 0001:000002F4       SysUtils.Finalization
+ 0001:000002FC       VarUtils.Finalization
+ 0001:00000304       Variants.@VarClr
+ 0001:0000030C       Variants.@VarToUStr
+ 0001:00000314       Variants.@VarFromInt
+ 0001:0000031C       Variants.@VarFromLStr
+ 0001:00000324       Variants.@VarFromUStr
+ 0001:0000032C       Variants.Finalization
+ 0001:00000334       TypInfo.Finalization
+ 0001:0000033C       Classes.TPersistent.Assign
+ 0001:00000344       Classes.TPersistent.AssignTo
+ 0001:0000034C       Classes.TThread.Destroy@
+ 0001:00000354       Classes.TComponent.BeforeDestruction
+ 0001:0000035C       Classes.TComponent.Notification
+ 0001:00000364       Classes.TComponent.Loaded
+ 0001:0000036C       Classes.TComponent.WriteState
+ 0001:00000374       Classes.TComponent.ValidateRename
+ 0001:0000037C       Classes.TComponent.SetName
+ 0001:00000384       Classes.TComponent.UpdateAction
+ 0001:0000038C       Classes.TComponent.SafeCallException
+ 0001:00000394       Classes.TComponent.UpdateRegistry
+ 0001:0000039C       Classes.TComponent.QueryInterface
+ 0001:000003A4       Classes.TDataModule.Create
+ 0001:000003AC       Classes.TDataModule.AfterConstruction
+ 0001:000003B4       Classes.TDataModule.CreateNew
+ 0001:000003BC       Classes.TDataModule.BeforeDestruction
+ 0001:000003C4       Classes.TDataModule.Destroy
+ 0001:000003CC       Classes.TDataModule.DoCreate
+ 0001:000003D4       Classes.TDataModule.DoDestroy
+ 0001:000003DC       Classes.TDataModule.DefineProperties
+ 0001:000003E4       Classes.TDataModule.ReadState
+ 0001:000003EC       Classes.Finalization
+ 0001:000003F4       TimeSpan.TTimeSpan.Destroy@
+ 0001:000003FC       SyncObjs.Finalization
+ 0001:00000404       UxTheme.Finalization
+ 0001:0000040C       HelpIntfs.Finalization
+ 0001:00000414       MultiMon.Finalization
+ 0001:0000041C       IOUtils.TPath.Destroy@
+ 0001:00000424       IOUtils.Finalization
+ 0001:0000042C       IniFiles.Finalization
+ 0001:00000434       Registry.Finalization
+ 0001:0000043C       Graphics.TFont.SetColor
+ 0001:00000444       Graphics.TPen.SetColor
+ 0001:0000044C       Graphics.TBrush.SetColor
+ 0001:00000454       Graphics.TCustomCanvas.TextWidth
+ 0001:0000045C       Graphics.TBitmap.Create
+ 0001:00000464       Graphics.TBitmap.GetCanvas
+ 0001:0000046C       Graphics.TBitmap.GetScanline
+ 0001:00000474       Graphics.TBitmap.SetPixelFormat
+ 0001:0000047C       Graphics.Finalization
+ 0001:00000484       GraphUtil.Finalization
+ 0001:0000048C       ShellAPI.SHFileOperation
+ 0001:00000494       Printers.Finalization
+ 0001:0000049C       Clipbrd.Finalization
+ 0001:000004A4       ExtCtrls.Finalization
+ 0001:000004AC       ComCtrls.Finalization
+ 0001:000004B4       Dialogs.Finalization
+ 0001:000004BC       FlatSB.Finalization
+ 0001:000004C4       Menus.Finalization
+ 0001:000004CC       Controls.TControl.GetDragImages
+ 0001:000004D4       Controls.TControl.GetEnabled
+ 0001:000004DC       Controls.TControl.GetAction
+ 0001:000004E4       Controls.TControl.SetDragMode
+ 0001:000004EC       Controls.TControl.SetAutoSize
+ 0001:000004F4       Controls.TControl.SetName
+ 0001:000004FC       Controls.TControl.SetVisible
+ 0001:00000504       Controls.TControl.SetEnabled
+ 0001:0000050C       Controls.TControl.GetText
+ 0001:00000514       Controls.TControl.SetText
+ 0001:0000051C       Controls.TControl.SetBiDiMode
+ 0001:00000524       Controls.TControl.SetParentBiDiMode
+ 0001:0000052C       Controls.TControl.CreateTouchManager
+ 0001:00000534       Controls.TControl.Loaded
+ 0001:0000053C       Controls.TControl.GetFloating
+ 0001:00000544       Controls.TControl.GetFloatingDockSiteClass
+ 0001:0000054C       Controls.TControl.InitiateAction
+ 0001:00000554       Controls.TWinControl.ReadState
+ 0001:0000055C       Controls.TWinControl.Notification
+ 0001:00000564       Controls.TWinControl.CreateWindowHandle
+ 0001:0000056C       Controls.TWinControl.DefineProperties
+ 0001:00000574       Controls.TWinControl.DestroyWnd
+ 0001:0000057C       Controls.TWinControl.DestroyWindowHandle
+ 0001:00000584       Controls.TWinControl.CreateHandle
+ 0001:0000058C       Controls.TWinControl.CustomAlignInsertBefore
+ 0001:00000594       Controls.TWinControl.CustomAlignPosition
+ 0001:0000059C       Controls.TWinControl.DestroyHandle
+ 0001:000005A4       Controls.TWinControl.SetParentDoubleBuffered
+ 0001:000005AC       Controls.TWinControl.WndProc
+ 0001:000005B4       Controls.TWinControl.DefaultHandler
+ 0001:000005BC       Controls.TWinControl.RequestAlign
+ 0001:000005C4       Controls.TWinControl.SetBounds
+ 0001:000005CC       Controls.TWinControl.ShowControl
+ 0001:000005D4       Controls.TWinControl.GetDeviceContext
+ 0001:000005DC       Controls.TWinControl.Invalidate
+ 0001:000005E4       Controls.TWinControl.Update
+ 0001:000005EC       Controls.TWinControl.Repaint
+ 0001:000005F4       Controls.TWinControl.SetFocus
+ 0001:000005FC       Controls.TWinControl.GetHandle
+ 0001:00000604       Controls.TWinControl.GetControlExtents
+ 0001:0000060C       Controls.TWinControl.GetClientOrigin
+ 0001:00000614       Controls.TWinControl.GetClientRect
+ 0001:0000061C       Controls.TWinControl.FindNextControl
+ 0001:00000624       Controls.TWinControl.CanResize
+ 0001:0000062C       Controls.TWinControl.ConstrainedResize
+ 0001:00000634       Controls.TWinControl.AssignTo
+ 0001:0000063C       Controls.TWinControl.CanAutoSize
+ 0001:00000644       Controls.TWinControl.SetParentBackground
+ 0001:0000064C       Controls.TWinControl.DockReplaceDockClient
+ 0001:00000654       Controls.TWinControl.UpdateControlOriginalParentSize
+ 0001:0000065C       Controls.Finalization
+ 0001:00000664       Themes.Finalization
+ 0001:0000066C       ActnList.Finalization
+ 0001:00000674       Forms.TScrollingWinControl.Destroy
+ 0001:0000067C       Forms.TScrollingWinControl.CreateWnd
+ 0001:00000684       Forms.TScrollingWinControl.AlignControls
+ 0001:0000068C       Forms.TScrollingWinControl.AutoScrollEnabled
+ 0001:00000694       Forms.TScrollingWinControl.DoGesture
+ 0001:0000069C       Forms.TScrollingWinControl.DoGetGestureOptions
+ 0001:000006A4       Forms.TScrollingWinControl.AutoScrollInView
+ 0001:000006AC       Forms.TScrollingWinControl.Resizing
+ 0001:000006B4       Forms.TScrollingWinControl.AdjustClientRect
+ 0001:000006BC       Forms.TCustomFrame.Create
+ 0001:000006C4       Forms.TCustomFrame.CreateParams
+ 0001:000006CC       Forms.TCustomFrame.PaintWindow
+ 0001:000006D4       Forms.TCustomFrame.SetParent
+ 0001:000006DC       Forms.TCustomForm.Create
+ 0001:000006E4       Forms.TCustomForm.AfterConstruction
+ 0001:000006EC       Forms.TCustomForm.CreateNew
+ 0001:000006F4       Forms.TCustomForm.BeforeDestruction
+ 0001:000006FC       Forms.TCustomForm.Destroy
+ 0001:00000704       Forms.TCustomForm.DoCreate
+ 0001:0000070C       Forms.TCustomForm.DoDestroy
+ 0001:00000714       Forms.TCustomForm.Loaded
+ 0001:0000071C       Forms.TCustomForm.Notification
+ 0001:00000724       Forms.TCustomForm.ReadState
+ 0001:0000072C       Forms.TCustomForm.DefineProperties
+ 0001:00000734       Forms.TCustomForm.GetClientRect
+ 0001:0000073C       Forms.TCustomForm.GetFloating
+ 0001:00000744       Forms.TCustomForm.SetParentBiDiMode
+ 0001:0000074C       Forms.TCustomForm.WantChildKey
+ 0001:00000754       Forms.TCustomForm.SetParent
+ 0001:0000075C       Forms.TCustomForm.ValidateRename
+ 0001:00000764       Forms.TCustomForm.WndProc
+ 0001:0000076C       Forms.TCustomForm.AlignControls
+ 0001:00000774       Forms.TCustomForm.GetCanvas
+ 0001:0000077C       Forms.TCustomForm.CreateParams
+ 0001:00000784       Forms.TCustomForm.CreateWnd
+ 0001:0000078C       Forms.TCustomForm.CreateWindowHandle
+ 0001:00000794       Forms.TCustomForm.DestroyHandle
+ 0001:0000079C       Forms.TCustomForm.DestroyWindowHandle
+ 0001:000007A4       Forms.TCustomForm.DefaultHandler
+ 0001:000007AC       Forms.TCustomForm.SetFocusedControl
+ 0001:000007B4       Forms.TCustomForm.PaintWindow
+ 0001:000007BC       Forms.TCustomForm.Resizing
+ 0001:000007C4       Forms.TCustomForm.Close
+ 0001:000007CC       Forms.TCustomForm.CloseQuery
+ 0001:000007D4       Forms.TCustomForm.Show
+ 0001:000007DC       Forms.TCustomForm.SetFocus
+ 0001:000007E4       Forms.TCustomForm.ShowModal
+ 0001:000007EC       Forms.TCustomForm.UpdateActions
+ 0001:000007F4       Forms.TCustomForm.RequestAlign
+ 0001:000007FC       Forms.TCustomForm.QueryInterface
+ 0001:00000804       Forms.TApplication.SetTitle
+ 0001:0000080C       Forms.TApplication.ProcessMessages
+ 0001:00000814       Forms.TApplication.Initialize
+ 0001:0000081C       Forms.TApplication.CreateForm
+ 0001:00000824       Forms.TApplication.Run
+ 0001:0000082C       Forms.TApplication.GetExeName
+ 0001:00000834       Forms.TApplication.SetMainFormOnTaskBar
+ 0001:0000083C       Forms.Finalization
+ 0001:00000844       WideStrings.Finalization
+ 0001:0000084C       FMTBcd.Finalization
+ 0001:00000854       SqlTimSt.Finalization
+ 0001:0000085C       ComObj.Finalization
+ 0001:00000864       DB.TFieldDefs.GetFieldDef
+ 0001:0000086C       DB.TFields.GetField
+ 0001:00000874       DB.TField.GetEditText
+ 0001:0000087C       DB.TDataSource.SetDataSet
+ 0001:00000884       DB.TDataSet.GetFieldCount
+ 0001:0000088C       DB.TDataSet.FieldByName
+ 0001:00000894       DB.TDataSet.First
+ 0001:0000089C       DB.TDataSet.Next
+ 0001:000008A4       DB.TDataSet.Refresh
+ 0001:000008AC       DB.TDataSet.Edit
+ 0001:000008B4       DB.TDataSet.Append
+ 0001:000008BC       DB.TDataSet.Delete
+ 0001:000008C4       DB.TDataSet.SetFields
+ 0001:000008CC       DB.Finalization
+ 0001:000008D4       Buttons.TSpeedButton.SetDown
+ 0001:000008DC       Buttons.Finalization
+ 0001:000008E4       Mask.TCustomMaskEdit.GetText
+ 0001:000008EC       Mask.TCustomMaskEdit.SetText
+ 0001:000008F4       DBPWDlg.Finalization
+ 0001:000008FC       DBLogDlg.Finalization
+ 0001:00000904       DBCtrls.TDBLookupControl.SetKeyFieldName
+ 0001:0000090C       DBCtrls.TDBLookupControl.SetKeyValue
+ 0001:00000914       DBCtrls.TDBLookupControl.SetListFieldName
+ 0001:0000091C       DBCtrls.TDBLookupControl.SetListSource
+ 0001:00000924       DBCtrls.Finalization
+ 0001:0000092C       sConst.Finalization
+ 0001:00000934       jpeg.Finalization
+ 0001:0000093C       sDefaults.Finalization
+ 0001:00000944       sDateUtils.Finalization
+ 0001:0000094C       Grids.TCustomGrid.SetRowHeights
+ 0001:00000954       pngimage.Finalization
+ 0001:0000095C       ExtDlgs.Finalization
+ 0001:00000964       sComboBoxes.Finalization
+ 0001:0000096C       sGauge.TsGauge.SetProgress
+ 0001:00000974       sSpinEdit.TsSpinEdit.SetValue
+ 0001:0000097C       acShellCtrls.Finalization
+ 0001:00000984       sDialogs.Finalization
+ 0001:0000098C       sPopupClndr.Finalization
+ 0001:00000994       sTooledit.TsCustomDateEdit.GetDate
+ 0001:0000099C       sTooledit.TsCustomDateEdit.SetDate
+ 0001:000009A4       sCalcUnit.Finalization
+ 0001:000009AC       sGradient.Finalization
+ 0001:000009B4       acGlow.Finalization
+ 0001:000009BC       sThirdParty.Finalization
+ 0001:000009C4       sGlyphUtils.Finalization
+ 0001:000009CC       sMonthCalendar.Finalization
+ 0001:000009D4       sGraphUtils.Finalization
+ 0001:000009DC       sVclUtils.Finalization
+ 0001:000009E4       acDials.Finalization
+ 0001:000009EC       sSkinMenus.Finalization
+ 0001:000009F4       sStyleSimply.Finalization
+ 0001:000009FC       sSkinManager.TsSkinManager.SetHueOffset
+ 0001:00000A04       sSkinManager.TsSkinManager.SetSaturation
+ 0001:00000A0C       sSkinManager.Finalization
+ 0001:00000A14       acPNG.Finalization
+ 0001:00000A1C       acSBUtils.Finalization
+ 0001:00000A24       sSkinProvider.Finalization
+ 0001:00000A2C       acntUtils.Finalization
+ 0001:00000A34       sMessages.Finalization
+ 0001:00000A3C       DBGrids.TColumnTitle.GetCaption
+ 0001:00000A44       DBGrids.TColumn.GetAlignment
+ 0001:00000A4C       DBGrids.TColumn.GetField
+ 0001:00000A54       DBGrids.TCustomDBGrid.GetDataSource
+ 0001:00000A5C       DBGrids.TCustomDBGrid.SetDataSource
+ 0001:00000A64       Halcn6db.THalcyonDataSet.SetDatabaseName
+ 0001:00000A6C       Halcn6db.THalcyonDataSet.SetTableName
+ 0001:00000A74       Halcn6db.Finalization
+ 0001:00000A7C       gs6_disk.Finalization
+ 0001:00000A84       gs6_date.Finalization
+ 0001:00000A8C       gs6_glbl.Finalization
+ 0001:00000A94       AnsiStrings.Finalization
+ 0001:00000A9C       gs6_tool.Finalization
+ 0001:00000AA4       gs6_sql.Finalization
+ 0001:00000AAC       gs6_fctn.Finalization
+ 0001:00000AB4       gs6_lcal.Finalization
+ 0001:00000ABC       gs6_dbf.Finalization
+ 0001:00000AC4       gs6_dbsy.Finalization
+ 0001:00000ACC       uDataModule..TDataModule1
+ 0001:0000142C       uDataModule.CloseTables
+ 0001:000015CC       uDataModule.OpenTables
+ 0001:00001978       uDataModule.init
+ 0001:00001A0C       uDataModule.TDataModule1.DBF_JURCalcFields
+ 0001:00001D40       uDataModule.Finalization
+ 0001:00001D8C       uDBGridFrame..TDBGridFrame
+ 0001:000020A8       uDBGridFrame.TDBGridFrame.DBGridDrawColumnCellJUR
+ 0001:00002254       uDBGridFrame.TDBGridFrame.DBGridDrawColumnCellDefault
+ 0001:00002374       xlcUtils.Finalization
+ 0001:0000237C       xlEngine.Finalization
+ 0001:00002384       xlStdOPack.Finalization
+ 0001:0000238C       OleCtrls.Finalization
+ 0001:00002394       AxCtrls.Finalization
+ 0001:0000239C       DdeMan.Finalization
+ 0001:000023A4       OleCtnrs.Finalization
+ 0001:000023AC       xlPivotOPack.Finalization
+ 0001:000023B4       xlProOPack.Finalization
+ 0001:000023BC       acAlphaHints.Finalization
+ 0001:000023C4       DBTables.Finalization
+ 0001:000023CC       sDBNavigator.TsDBNavigator.SetDataSource
+ 0001:000023D4       sDBNavigator.Finalization
+ 0001:000023DC       uAddEditOTKLForm..TAddEditOTKLForm
+ 0001:00002D38       uAddEditOTKLForm.TAddEditOTKLForm.Create
+ 0001:00002DB4       uAddEditOTKLForm.TAddEditOTKLForm.Create
+ 0001:00002F50       uAddEditOTKLForm.TAddEditOTKLForm.FormCreate
+ 0001:00003944       uAddEditOTKLForm.TAddEditOTKLForm.btnSaveClick
+ 0001:00003A24       uAddEditOTKLForm.TAddEditOTKLForm.cmbListPSClick
+ 0001:00003AD8       uAddEditOTKLForm.TAddEditOTKLForm.GetDate
+ 0001:00003AFC       uAddEditOTKLForm.TAddEditOTKLForm.SetDate
+ 0001:00003BD0       uAddEditOTKLForm.TAddEditOTKLForm.GetKODPS
+ 0001:00003BEC       uAddEditOTKLForm.TAddEditOTKLForm.SetKODPS
+ 0001:00003CCC       uAddEditOTKLForm.TAddEditOTKLForm.GetNumber
+ 0001:00003CE8       uAddEditOTKLForm.TAddEditOTKLForm.SetNumber
+ 0001:00003DCC       uAddEditOTKLForm.TAddEditOTKLForm.GetTIME_OL
+ 0001:00003DE4       uAddEditOTKLForm.TAddEditOTKLForm.SetTIME_OL
+ 0001:00003EB4       uAddEditOTKLForm.TAddEditOTKLForm.GetTIME_OT
+ 0001:00003ECC       uAddEditOTKLForm.TAddEditOTKLForm.SetTIME_OT
+ 0001:00003F9C       uAddEditOTKLForm.TAddEditOTKLForm.GetTIME_VT
+ 0001:00003FB4       uAddEditOTKLForm.TAddEditOTKLForm.SetTIME_VT
+ 0001:00004084       uAddEditOTKLForm.TAddEditOTKLForm.GeTIME_VL
+ 0001:0000409C       uAddEditOTKLForm.TAddEditOTKLForm.SetTIME_VL
+ 0001:0000416C       uAddEditOTKLForm.TAddEditOTKLForm.GetPROD_OL
+ 0001:00004184       uAddEditOTKLForm.TAddEditOTKLForm.SetPROD_OL
+ 0001:00004254       uAddEditOTKLForm.TAddEditOTKLForm.GetPROD_OT
+ 0001:0000426C       uAddEditOTKLForm.TAddEditOTKLForm.SetPROD_OT
+ 0001:0000433C       uAddEditOTKLForm.TAddEditOTKLForm.GetKOD
+ 0001:00004354       uAddEditOTKLForm.TAddEditOTKLForm.SetKOD
+ 0001:00004420       uAddEditOTKLForm.TAddEditOTKLForm.GetPrichina
+ 0001:00004438       uAddEditOTKLForm.TAddEditOTKLForm.SetPrichina
+ 0001:00004520       uAddEditOTKLForm.TAddEditOTKLForm.sDBNavigatorClick
+ 0001:00004A38       uViewForm..TViewForm
+ 0001:00004F40       uViewForm.TViewForm.FormCreate
+ 0001:00004F78       uViewForm.GetH
+ 0001:00005090       uViewForm.GetM
+ 0001:000051BC       uViewForm.ShowAddEditWindow
+ 0001:00005DC0       uViewForm.TViewForm.btnAddClick
+ 0001:00005DC8       uViewForm.TViewForm.btnEditClick
+ 0001:00005DD0       uViewForm.TViewForm.DBGridFrame1DBGridDblClick
+ 0001:00005DD8       uViewForm.TViewForm.btnDelClick
+ 0001:00006034       uAboutForm..TAboutForm
+ 0001:000065DC       uAboutForm.BitMapToPointer
+ 0001:00006624       uAboutForm.TAboutForm.CreateParams
+ 0001:0000662C       uAboutForm.TAboutForm.FormKeyPress
+ 0001:00006634       uAboutForm.TAboutForm.FormMouseDown
+ 0001:00006640       uAboutForm.TAboutForm.FormShow
+ 0001:00006644       uAboutForm.TAboutForm.ImageButtonClick
+ 0001:0000664C       uAboutForm.TAboutForm.ImageButtonMouseEnter
+ 0001:00006650       uAboutForm.TAboutForm.ImageButtonMouseLeave
+ 0001:00006654       uAboutForm.TAboutForm.FormCreate
+ 0001:000067D0       uAboutForm.TAboutForm.Timer1Timer
+ 0001:00006B2C       uAboutForm.TAboutForm.FormMouseMove
+ 0001:00006CD4       uMainForm..TMainForm
+ 0001:000074DC       uMainForm.TMainForm.FormCreate
+ 0001:000074E4       uMainForm.TMainForm.FormKeyUp
+ 0001:00007550       uMainForm.TMainForm.lblCopyrightClick
+ 0001:000075B0       uMainForm.TMainForm.btnEditClick
+ 0001:00007610       uMainForm.TMainForm.btn3Click
+ 0001:00007670       uMainForm.TMainForm.btn4Click
+ 0001:000076D0       uMainForm.TMainForm.btnViewSpravClick
+ 0001:00007730       uMainForm.TMainForm.sTrackBar1Change
+ 0001:000077D8       uMainForm.TMainForm.sTrackBar1MouseUp
+ 0001:00007804       uMainForm.TMainForm.sTrackBar2Change
+ 0001:000078AC       uWaitForm..TWaitForm
+ 0001:00007CA0       uWaitForm.TWaitForm.Create
+ 0001:00007CD8       uWaitForm.TWaitForm.Create
+ 0001:00007D28       uWaitForm.TWaitForm.SetAllProgress
+ 0001:00007D40       uWaitForm.TWaitForm.SetProgress
+ 0001:00007D58       uWaitForm.TWaitForm.Timer1Timer
+ 0001:00007D80       uAddEditLINEForm..TAddEditLINEForm
+ 0001:000083BC       uAddEditLINEForm.TAddEditLINEForm.Create
+ 0001:0000843C       uAddEditLINEForm.TAddEditLINEForm.Create
+ 0001:00008600       uAddEditLINEForm.TAddEditLINEForm.FormKeyUp
+ 0001:0000866C       uAddEditLINEForm.TAddEditLINEForm.btnSaveClick
+ 0001:0000875C       uAddEditLINEForm.TAddEditLINEForm.GetDateVvoda
+ 0001:00008780       uAddEditLINEForm.TAddEditLINEForm.SetDateVvoda
+ 0001:00008860       uAddEditLINEForm.TAddEditLINEForm.GetKODPS
+ 0001:0000887C       uAddEditLINEForm.TAddEditLINEForm.SetKODPS
+ 0001:000089BC       uAddEditLINEForm.TAddEditLINEForm.GetNumber
+ 0001:000089D4       uAddEditLINEForm.TAddEditLINEForm.SetNumber
+ 0001:00008AA0       uAddEditLINEForm.TAddEditLINEForm.sDBNavigatorClick
+ 0001:00008BD0       uAddEditPSForm..TAddEditPSForm
+ 0001:000091A4       uAddEditPSForm.TAddEditPSForm.Create
+ 0001:0000921C       uAddEditPSForm.TAddEditPSForm.Create
+ 0001:00009364       uAddEditPSForm.TAddEditPSForm.FormKeyUp
+ 0001:000093D0       uAddEditPSForm.TAddEditPSForm.btnSaveClick
+ 0001:000094B4       uAddEditPSForm.TAddEditPSForm.GetKODPS
+ 0001:000094C4       uAddEditPSForm.TAddEditPSForm.SetKODPS
+ 0001:0000958C       uAddEditPSForm.TAddEditPSForm.GetKODRes
+ 0001:000095A8       uAddEditPSForm.TAddEditPSForm.SetKODRes
+ 0001:00009688       uAddEditPSForm.TAddEditPSForm.GetName
+ 0001:000096A0       uAddEditPSForm.TAddEditPSForm.SetName
+ 0001:00009764       uAddEditPSForm.TAddEditPSForm.sDBNavigatorClick
+ 0001:00009880       uAddEditRESForm..TAddEditRESForm
+ 0001:00009DD8       uAddEditRESForm.TAddEditRESForm.Create
+ 0001:00009E54       uAddEditRESForm.TAddEditRESForm.Create
+ 0001:00009F34       uAddEditRESForm.TAddEditRESForm.FormKeyUp
+ 0001:00009FA0       uAddEditRESForm.TAddEditRESForm.btnSaveClick
+ 0001:0000A074       uAddEditRESForm.TAddEditRESForm.GetKOD
+ 0001:0000A08C       uAddEditRESForm.TAddEditRESForm.SetKOD
+ 0001:0000A150       uAddEditRESForm.TAddEditRESForm.GetName
+ 0001:0000A168       uAddEditRESForm.TAddEditRESForm.SetName
+ 0001:0000A230       uAddEditRESForm.TAddEditRESForm.sDBNavigatorClick
+ 0001:0000A2F4       uSpravForm..TSpravForm
+ 0001:0000AC10       uSpravForm.TSpravForm.CreateParams
+ 0001:0000AC18       uSpravForm.ShowAddEditWindow
+ 0001:0000B2C4       uSpravForm.TSpravForm.btnAddClick
+ 0001:0000B2CC       uSpravForm.TSpravForm.btnDelClick
+ 0001:0000B528       uSpravForm.TSpravForm.btnEditClick
+ 0001:0000B530       uSpravForm.TSpravForm.DBGridFrame1DBGridDblClick
+ 0001:0000B538       uSpravForm.TSpravForm.btnViewLineClick
+ 0001:0000B5A4       uSpravForm.TSpravForm.btnViewPSClick
+ 0001:0000B618       uSpravForm.TSpravForm.btnViewRESClick
+ 0001:0000B684       uSpravForm.TSpravForm.FormCreate
+ 0001:0000B68C       uSpravForm.TSpravForm.FormKeyUp
+ 0001:0000B76C       uSpravForm.TSpravForm.btnCancelClick
+ 0001:0000B7A4       uSpravForm.TSpravForm.btnHelpClick
+ 0001:0000B850       uSpravForm.MakeCurrent
+ 0001:0000BB14       uSpravForm.MoveDataBase
+ 0001:0000BF10       uSpravForm.TSpravForm.btnStartClick
+ 0001:0000C1A4       Analiz.Finalization
+ 0002:00000000       System.System
+ 0002:00000008       Windows.Windows
+ 0002:00000020       SysUtils.TLanguages.Create@
+ 0002:00000028       SysUtils.TEncoding.Create@
+ 0002:00000030       SysUtils.Exception.Create@
+ 0002:00000038       SysUtils.SysUtils
+ 0002:00000040       VarUtils.VarUtils
+ 0002:00000048       Variants.Variants
+ 0002:00000050       TypInfo.TypInfo
+ 0002:00000058       Classes.TThread.Create@
+ 0002:00000060       Classes.Classes
+ 0002:00000068       TimeSpan.TTimeSpan.Create@
+ 0002:00000070       SyncObjs.SyncObjs
+ 0002:00000078       UxTheme.UxTheme
+ 0002:00000080       HelpIntfs.HelpIntfs
+ 0002:00000088       MultiMon.MultiMon
+ 0002:00000090       IOUtils.TPath.Create@
+ 0002:00000098       IOUtils.IOUtils
+ 0002:000000A0       IniFiles.IniFiles
+ 0002:000000A8       Registry.Registry
+ 0002:000000B0       Graphics.Graphics
+ 0002:000000B8       GraphUtil.GraphUtil
+ 0002:000000C0       Printers.Printers
+ 0002:000000C8       Clipbrd.Clipbrd
+ 0002:000000D0       ExtCtrls.ExtCtrls
+ 0002:000000D8       ComCtrls.ComCtrls
+ 0002:000000E0       Dialogs.Dialogs
+ 0002:000000E8       FlatSB.FlatSB
+ 0002:000000F0       Menus.Menus
+ 0002:000000F8       Controls.Controls
+ 0002:00000100       Themes.Themes
+ 0002:00000108       ActnList.ActnList
+ 0002:00000110       Forms.Forms
+ 0002:00000118       WideStrings.WideStrings
+ 0002:00000120       FMTBcd.FMTBcd
+ 0002:00000128       SqlTimSt.SqlTimSt
+ 0002:00000130       ComObj.ComObj
+ 0002:00000138       DB.DB
+ 0002:00000140       Buttons.Buttons
+ 0002:00000148       DBPWDlg.DBPWDlg
+ 0002:00000150       DBLogDlg.DBLogDlg
+ 0002:00000158       DBCtrls.DBCtrls
+ 0002:00000160       sConst.sConst
+ 0002:00000168       jpeg.jpeg
+ 0002:00000170       sDefaults.sDefaults
+ 0002:00000178       sDateUtils.sDateUtils
+ 0002:00000180       pngimage.pngimage
+ 0002:00000188       ExtDlgs.ExtDlgs
+ 0002:00000190       sComboBoxes.sComboBoxes
+ 0002:00000198       acShellCtrls.acShellCtrls
+ 0002:000001A0       sDialogs.sDialogs
+ 0002:000001A8       sPopupClndr.sPopupClndr
+ 0002:000001B0       sCalcUnit.sCalcUnit
+ 0002:000001B8       sGradient.sGradient
+ 0002:000001C0       acGlow.acGlow
+ 0002:000001C8       sThirdParty.sThirdParty
+ 0002:000001D0       sGlyphUtils.sGlyphUtils
+ 0002:000001D8       sMonthCalendar.sMonthCalendar
+ 0002:000001E0       sGraphUtils.sGraphUtils
+ 0002:000001E8       sVclUtils.sVclUtils
+ 0002:000001F0       acDials.acDials
+ 0002:000001F8       sSkinMenus.sSkinMenus
+ 0002:00000200       sStyleSimply.sStyleSimply
+ 0002:00000208       sSkinManager.sSkinManager
+ 0002:00000210       acPNG.acPNG
+ 0002:00000218       acSBUtils.acSBUtils
+ 0002:00000220       sSkinProvider.sSkinProvider
+ 0002:00000228       acntUtils.acntUtils
+ 0002:00000230       sMessages.sMessages
+ 0002:00000238       Halcn6db.Halcn6db
+ 0002:00000240       gs6_disk.gs6_disk
+ 0002:00000248       gs6_date.gs6_date
+ 0002:00000250       gs6_glbl.gs6_glbl
+ 0002:00000258       AnsiStrings.AnsiStrings
+ 0002:00000260       gs6_tool.gs6_tool
+ 0002:00000268       gs6_sql.gs6_sql
+ 0002:00000270       gs6_fctn.gs6_fctn
+ 0002:00000278       gs6_lcal.gs6_lcal
+ 0002:00000280       gs6_dbf.gs6_dbf
+ 0002:00000288       gs6_dbsy.gs6_dbsy
+ 0002:00000290       uDataModule.uDataModule
+ 0002:000002C0       xlcUtils.xlcUtils
+ 0002:000002C8       xlEngine.xlEngine
+ 0002:000002D0       xlStdOPack.xlStdOPack
+ 0002:000002D8       OleCtrls.OleCtrls
+ 0002:000002E0       AxCtrls.AxCtrls
+ 0002:000002E8       DdeMan.DdeMan
+ 0002:000002F0       OleCtnrs.OleCtnrs
+ 0002:000002F8       xlPivotOPack.xlPivotOPack
+ 0002:00000300       xlProOPack.xlProOPack
+ 0002:00000308       acAlphaHints.acAlphaHints
+ 0002:00000310       DBTables.DBTables
+ 0002:00000318       sDBNavigator.sDBNavigator
+ 0002:00000320       Analiz.Analiz
+ 0003:00000000       SysInit.TlsIndex
+ 0003:00000004       SysInit.PtrToNil
+ 0003:00000008       SysInit.Module
+ 0003:00000024       Windows.Win32MajorVersion
+ 0003:00000028       Windows.Win32MinorVersion
+ 0003:0000002C       Windows.Win32Platform
+ 0004:00000000       SysInit.HInstance
+ 0004:00000004       Windows..2
+ 0004:00000008       Windows.HtmlHelpModule
+ 0004:0000000C       uDataModule.DataModule1
+ 0004:00000010       uDataModule.WorkFolder
+ 0004:00000014       uDataModule..2
+ 0004:00000018       Unit5.Form5
+ 0004:0000001C       uAddEditOTKLForm.AddEditOTKLForm
+ 0004:00000020       uViewForm.ViewForm
+ 0004:00000024       uAboutForm.AboutForm
+ 0004:00000028       uAboutForm.bit
+ 0004:0000002C       uAboutForm.bitp
+ 0004:00000030       uAboutForm.b
+ 0004:00000FD4       uAboutForm.b1
+ 0004:00001F78       uMainForm.MainForm
+ 0004:00001F7C       uWaitForm.WaitForm
+ 0004:00001F80       uAddEditLINEForm.AddEditLINEForm
+ 0004:00001F84       uAddEditPSForm.AddEditPSForm
+ 0004:00001F88       uAddEditRESForm.AddEditRESForm
+ 0004:00001F8C       uSpravForm.SpravForm
+
+
+Line numbers for SysInit(SysInit.pas) segment .text
+
+   120 0001:00000180   418 0001:00000188   419 0001:00000192   665 0001:00000194
+   666 0001:00000197   667 0001:0000019E   668 0001:000001AA   669 0001:000001B4
+   670 0001:000001BB   671 0001:000001C2   672 0001:000001CA   673 0001:000001CF
+   674 0001:000001DB   849 0001:000001E4
+
+Line numbers for uDataModule(uDataModule.pas) segment .text
+
+    78 0001:0000142C    79 0001:00001449    82 0001:00001457    83 0001:00001466
+    84 0001:00001472    85 0001:00001481    86 0001:0000148D    87 0001:0000149C
+    88 0001:000014A8    89 0001:000014BA    91 0001:000014E1    92 0001:000014E3
+    98 0001:00001533   101 0001:000015CC   102 0001:000015F1   106 0001:000015FF
+   108 0001:00001632   109 0001:00001662   110 0001:00001671   112 0001:00001680
+   113 0001:000016B0   114 0001:000016BF   116 0001:000016CE   117 0001:000016FE
+   118 0001:0000170D   120 0001:0000171C   121 0001:0000174F   122 0001:00001761
+   124 0001:00001773   125 0001:00001782   126 0001:00001791   127 0001:000017A0
+   129 0001:000017CD   130 0001:000017CF   135 0001:0000181F   138 0001:00001978
+   139 0001:0000198F   141 0001:000019A2   143 0001:000019C4   145 0001:000019DE
+   146 0001:000019E3   149 0001:00001A0C   150 0001:00001A2C   151 0001:00001A81
+   152 0001:00001AD6   153 0001:00001B2B   154 0001:00001B80   155 0001:00001BD5
+   156 0001:00001C2A   157 0001:00001C6A   162 0001:00001D40   163 0001:00001D5E
+   164 0001:00001D68
+
+Line numbers for uDataModule(uDataModule.pas) segment .itext
+
+   159 0002:00000290   161 0002:000002A8
+
+Line numbers for uDBGridFrame(uDBGridFrame.pas) segment .text
+
+    39 0001:000020A8    40 0001:000020E0    41 0001:000020EA    47 0001:000020F6
+    48 0001:0000210E    49 0001:00002114    50 0001:00002120    52 0001:00002142
+    56 0001:00002150    57 0001:0000215D    58 0001:0000216A    59 0001:00002173
+    60 0001:0000217F    63 0001:000021E8    65 0001:00002225    69 0001:00002254
+    70 0001:0000226F    71 0001:00002279    73 0001:00002285    74 0001:00002292
+    75 0001:0000229F    76 0001:000022A8    77 0001:000022B4    80 0001:00002311
+    82 0001:00002348    84 0001:00002379
+
+Line numbers for Unit5(Unit5.pas) segment .text
+
+    39 0001:00000000
+
+Line numbers for uAddEditOTKLForm(uAddEditOTKLForm.pas) segment .text
+
+    95 0001:00002D38    96 0001:00002D4A    97 0001:00002D53    98 0001:00002D5F
+   101 0001:00002DB4   102 0001:00002DC9   103 0001:00002DD5   104 0001:00002DDB
+   106 0001:00002DE9   108 0001:00002DF5   109 0001:00002E05   110 0001:00002E1A
+   112 0001:00002E2A   113 0001:00002E3A   114 0001:00002E4F   116 0001:00002E5F
+   117 0001:00002E74   120 0001:00002F50   121 0001:00002F54   122 0001:00002F6A
+   123 0001:00002F80   124 0001:00002F96   125 0001:00002FAC   126 0001:00002FC2
+   127 0001:00002FD8   128 0001:00002FEE   129 0001:00003004   130 0001:0000301A
+   131 0001:00003030   132 0001:00003046   133 0001:0000305C   134 0001:00003072
+   135 0001:00003088   136 0001:0000309E   137 0001:000030B4   138 0001:000030CA
+   139 0001:000030E0   140 0001:000030F6   141 0001:0000310C   142 0001:00003122
+   143 0001:00003138   144 0001:0000314E   145 0001:00003164   146 0001:0000317A
+   147 0001:00003190   148 0001:000031A6   149 0001:000031BC   150 0001:000031D2
+   151 0001:000031E8   152 0001:000031FE   153 0001:00003214   154 0001:0000323B
+   157 0001:00003944   158 0001:0000395C   162 0001:0000398E   165 0001:0000399A
+   167 0001:000039C1   173 0001:00003A24   174 0001:00003A3C   175 0001:00003A50
+   176 0001:00003A75   177 0001:00003A88   178 0001:00003A98   183 0001:00003AD8
+   184 0001:00003ADE   185 0001:00003AF7   188 0001:00003AFC   189 0001:00003B1C
+   190 0001:00003B3A   191 0001:00003B54   194 0001:00003BD0   195 0001:00003BD6
+   196 0001:00003BE9   199 0001:00003BEC   200 0001:00003C12   201 0001:00003C30
+   202 0001:00003C49   205 0001:00003CCC   206 0001:00003CD2   207 0001:00003CE5
+   210 0001:00003CE8   211 0001:00003D0E   212 0001:00003D2C   213 0001:00003D45
+   216 0001:00003DCC   217 0001:00003DD2   218 0001:00003DDF   221 0001:00003DE4
+   222 0001:00003E04   223 0001:00003E22   224 0001:00003E30   227 0001:00003EB4
+   228 0001:00003EBA   229 0001:00003EC7   232 0001:00003ECC   233 0001:00003EEC
+   234 0001:00003F0A   235 0001:00003F18   238 0001:00003F9C   239 0001:00003FA2
+   240 0001:00003FAF   243 0001:00003FB4   244 0001:00003FD4   245 0001:00003FF2
+   246 0001:00004000   249 0001:00004084   250 0001:0000408A   251 0001:00004097
+   254 0001:0000409C   255 0001:000040BC   256 0001:000040DA   257 0001:000040E8
+   260 0001:0000416C   261 0001:00004172   262 0001:0000417F   265 0001:00004184
+   266 0001:000041A4   267 0001:000041C2   268 0001:000041D0   271 0001:00004254
+   272 0001:0000425A   273 0001:00004267   276 0001:0000426C   277 0001:0000428C
+   278 0001:000042AA   279 0001:000042B8   282 0001:0000433C   283 0001:00004342
+   284 0001:0000434F   287 0001:00004354   288 0001:00004374   289 0001:00004392
+   290 0001:000043A7   293 0001:00004420   294 0001:00004426   295 0001:00004433
+   298 0001:00004438   299 0001:0000445F   300 0001:0000447D   301 0001:00004496
+   307 0001:00004520   308 0001:00004545   310 0001:00004552   311 0001:00004570
+   313 0001:00004583   314 0001:00004593   316 0001:000045A7   317 0001:000045D4
+   318 0001:000045F2   319 0001:0000463C   320 0001:00004686   321 0001:000046D0
+   322 0001:0000471A   323 0001:00004764   324 0001:000047AE   325 0001:000047CC
+   327 0001:000047EA   329 0001:00004A3F
+
+Line numbers for uViewForm(uViewForm.pas) segment .text
+
+    44 0001:00004F40    46 0001:00004F49    47 0001:00004F5F    49 0001:00004F74
+    56 0001:00004F78    57 0001:00004F9F    58 0001:00004FAD    59 0001:00004FBC
+    61 0001:00004FF2    63 0001:0000500D    67 0001:00005090    68 0001:000050B7
+    69 0001:000050C5    70 0001:000050D4    72 0001:0000511D    74 0001:00005138
+    76 0001:000051BC    77 0001:000051E4    78 0001:000051F2    79 0001:0000520D
+    82 0001:00005215    83 0001:0000523E    84 0001:00005267    85 0001:00005290
+    86 0001:000052EB    87 0001:00005346    88 0001:000053A1    89 0001:000053FC
+    90 0001:00005457    91 0001:000054B2    92 0001:000054DB    94 0001:00005504
+    96 0001:0000551A    99 0001:00005529   100 0001:0000555E   121 0001:00005824
+   122 0001:00005831   123 0001:00005872   141 0001:00005B33   148 0001:00005B50
+   150 0001:00005B64   154 0001:00005DC0   155 0001:00005DC7   159 0001:00005DC8
+   160 0001:00005DCF   164 0001:00005DD0   165 0001:00005DD5   168 0001:00005DD8
+   169 0001:00005DF7   173 0001:00005E64   174 0001:00005E80   175 0001:00005E9C
+   177 0001:00005EC5   180 0001:00005F11   183 0001:00005F3F   185 0001:0000603B
+
+Line numbers for uAboutForm(uAboutForm.pas) segment .text
+
+    55 0001:000065DC    56 0001:000065E4    57 0001:000065F5    58 0001:000065FE
+    57 0001:00006619    59 0001:0000661C    63 0001:00006624    66 0001:00006629
+    70 0001:0000662C    71 0001:00006631    75 0001:00006634    76 0001:00006637
+    77 0001:0000663C    82 0001:00006640    87 0001:00006644    88 0001:00006649
+    93 0001:0000664C    98 0001:00006650   103 0001:00006654   104 0001:0000666C
+   105 0001:0000667D   107 0001:000066B1   108 0001:000066C2   109 0001:000066D1
+   110 0001:000066E0   111 0001:000066EC   112 0001:000066FC   114 0001:0000670C
+   115 0001:00006711   117 0001:0000671D   118 0001:0000673B   119 0001:0000674D
+   120 0001:0000675E   115 0001:00006761   120 0001:00006766   114 0001:00006767
+   121 0001:0000676F   127 0001:000067D0   128 0001:000067D7   130 0001:000067DC
+   131 0001:000067DE   132 0001:00006806   133 0001:00006813   134 0001:00006819
+   135 0001:00006849   128 0001:0000684A   136 0001:00006852   137 0001:00006857
+   139 0001:00006868   140 0001:0000688C   141 0001:00006A1F   142 0001:00006A3C
+   143 0001:00006A4B   144 0001:00006A58   145 0001:00006A5E   146 0001:00006A8A
+   147 0001:00006AB4   148 0001:00006ADD   137 0001:00006AE6   148 0001:00006AF0
+   136 0001:00006AF1   149 0001:00006AFD   150 0001:00006B18   156 0001:00006B2C
+   157 0001:00006B33   158 0001:00006B4A   159 0001:00006B5E   160 0001:00006B63
+   162 0001:00006B68   164 0001:00006C3E   165 0001:00006C88   166 0001:00006CB0
+   160 0001:00006CB1   166 0001:00006CBA   159 0001:00006CBB   167 0001:00006CC4
+   169 0001:00006CDB
+
+Line numbers for uMainForm(uMainForm.pas) segment .text
+
+    66 0001:000074DC    67 0001:000074E1    72 0001:000074E4    73 0001:000074E7
+    75 0001:00007509    79 0001:00007510    81 0001:00007521    83 0001:00007532
+    85 0001:0000753B    87 0001:0000754A    92 0001:00007550    93 0001:00007556
+    95 0001:00007564    96 0001:0000757B    99 0001:00007597   101 0001:000075AB
+   104 0001:000075B0   105 0001:000075B6   107 0001:000075C4   108 0001:000075DB
+   111 0001:000075F7   113 0001:0000760B   116 0001:00007610   117 0001:00007616
+   119 0001:00007624   120 0001:0000763B   123 0001:00007657   125 0001:0000766B
+   128 0001:00007670   129 0001:00007676   130 0001:00007684   131 0001:0000769A
+   133 0001:000076B6   135 0001:000076CA   138 0001:000076D0   139 0001:000076D6
+   140 0001:000076E4   141 0001:000076FA   143 0001:00007716   145 0001:0000772A
+   152 0001:00007730   153 0001:00007748   155 0001:00007762   156 0001:0000776C
+   157 0001:00007784   158 0001:00007794   159 0001:000077A5   161 0001:000077B4
+   165 0001:000077D8   166 0001:000077DB   167 0001:000077F5   168 0001:000077FE
+   173 0001:00007804   174 0001:0000781C   176 0001:00007836   177 0001:00007840
+   178 0001:00007858   179 0001:00007868   180 0001:00007879   182 0001:00007888
+   184 0001:000078B2
+
+Line numbers for uWaitForm(uWaitForm.pas) segment .text
+
+    40 0001:00007CA0    41 0001:00007CB2    42 0001:00007CBB    45 0001:00007CD8
+    46 0001:00007CED    47 0001:00007CF6    48 0001:00007D09    52 0001:00007D28
+    53 0001:00007D31    54 0001:00007D3D    58 0001:00007D40    59 0001:00007D49
+    60 0001:00007D55    63 0001:00007D58    64 0001:00007D5B    65 0001:00007D6C
+    66 0001:00007D7D    68 0001:00007D86
+
+Line numbers for uAddEditLINEForm(uAddEditLINEForm.pas) segment .text
+
+    58 0001:000083BC    59 0001:000083CE    60 0001:000083D7    61 0001:000083E3
+    64 0001:0000843C    65 0001:00008451    66 0001:0000845D    67 0001:00008463
+    69 0001:00008471    71 0001:0000847D    72 0001:0000848D    73 0001:000084A2
+    75 0001:000084B2    76 0001:000084C2    77 0001:000084D7    78 0001:000084E7
+    79 0001:000084FC    85 0001:00008600    86 0001:00008607    88 0001:00008618
+    90 0001:0000861E    91 0001:0000862F    92 0001:00008651    94 0001:0000865D
+    96 0001:00008664   101 0001:0000866C   102 0001:00008686   104 0001:000086BD
+   106 0001:000086C9   108 0001:000086F0   113 0001:0000875C   114 0001:00008762
+   115 0001:0000877B   118 0001:00008780   119 0001:000087A0   120 0001:000087BE
+   121 0001:000087D8   124 0001:00008860   125 0001:00008866   126 0001:00008879
+   129 0001:0000887C   130 0001:000088A8   132 0001:000088C6   133 0001:000088DF
+   135 0001:00008912   138 0001:000089BC   139 0001:000089C2   140 0001:000089CF
+   143 0001:000089D4   144 0001:000089F4   145 0001:00008A12   146 0001:00008A20
+   152 0001:00008AA0   153 0001:00008AC4   154 0001:00008AF7   155 0001:00008B2A
+   156 0001:00008B50   158 0001:00008BD7
+
+Line numbers for uAddEditPSForm(uAddEditPSForm.pas) segment .text
+
+    55 0001:000091A4    56 0001:000091B6    57 0001:000091BF    58 0001:000091CB
+    61 0001:0000921C    62 0001:00009231    63 0001:0000923A    64 0001:00009240
+    66 0001:0000924E    67 0001:0000925A    68 0001:0000926A    69 0001:0000927F
+    70 0001:0000928F    71 0001:000092A4    77 0001:00009364    78 0001:0000936B
+    80 0001:0000937C    82 0001:00009382    83 0001:00009393    84 0001:000093B5
+    86 0001:000093C1    88 0001:000093C8    93 0001:000093D0    94 0001:000093EA
+    96 0001:00009421    98 0001:0000942D   100 0001:00009454   105 0001:000094B4
+   106 0001:000094B7   107 0001:000094C0   110 0001:000094C4   111 0001:000094E4
+   112 0001:00009502   113 0001:00009510   116 0001:0000958C   117 0001:00009592
+   118 0001:000095A5   121 0001:000095A8   122 0001:000095CE   123 0001:000095EC
+   124 0001:00009605   127 0001:00009688   128 0001:0000968E   129 0001:0000969B
+   132 0001:000096A0   133 0001:000096C0   134 0001:000096DE   135 0001:000096EC
+   141 0001:00009764   142 0001:00009784   143 0001:000097AA   144 0001:000097D0
+   145 0001:00009803   147 0001:00009887
+
+Line numbers for uAddEditRESForm(uAddEditRESForm.pas) segment .text
+
+    50 0001:00009DD8    51 0001:00009DEA    52 0001:00009DF3    53 0001:00009DFF
+    56 0001:00009E54    57 0001:00009E69    58 0001:00009E72    59 0001:00009E78
+    61 0001:00009E86    62 0001:00009E92    63 0001:00009EA7    69 0001:00009F34
+    70 0001:00009F3B    72 0001:00009F4C    74 0001:00009F52    75 0001:00009F63
+    76 0001:00009F85    78 0001:00009F91    80 0001:00009F98    85 0001:00009FA0
+    86 0001:00009FBA    88 0001:00009FE2    90 0001:00009FEE    92 0001:0000A015
+    97 0001:0000A074    98 0001:0000A07A    99 0001:0000A087   102 0001:0000A08C
+   103 0001:0000A0AC   104 0001:0000A0CA   105 0001:0000A0D8   108 0001:0000A150
+   109 0001:0000A156   110 0001:0000A163   113 0001:0000A168   114 0001:0000A188
+   115 0001:0000A1A6   116 0001:0000A1B4   122 0001:0000A230   123 0001:0000A248
+   124 0001:0000A26E   125 0001:0000A294   127 0001:0000A2FB
+
+Line numbers for uSpravForm(uSpravForm.pas) segment .text
+
+    67 0001:0000AC10    71 0001:0000AC15    76 0001:0000AC18    77 0001:0000AC38
+    79 0001:0000AC50    80 0001:0000AC5E    81 0001:0000AC79    83 0001:0000AC7D
+    84 0001:0000ACA8    86 0001:0000ACD3    88 0001:0000ACE9    90 0001:0000ACF4
+    94 0001:0000AD3F    95 0001:0000AD4E    97 0001:0000AD97   103 0001:0000ADB6
+   107 0001:0000ADCA   109 0001:0000ADE2   110 0001:0000ADF0   111 0001:0000AE0B
+   113 0001:0000AE13   114 0001:0000AE3E   115 0001:0000AE69   117 0001:0000AE94
+   119 0001:0000AEAA   121 0001:0000AEB5   126 0001:0000AF1C   127 0001:0000AF2B
+   130 0001:0000AF8D   136 0001:0000AFAC   140 0001:0000AFC0   142 0001:0000AFD8
+   143 0001:0000AFE6   144 0001:0000B001   146 0001:0000B009   147 0001:0000B034
+   148 0001:0000B05F   150 0001:0000B08A   152 0001:0000B0A0   154 0001:0000B0AB
+   159 0001:0000B112   160 0001:0000B121   163 0001:0000B18F   169 0001:0000B1AE
+   172 0001:0000B1C2   176 0001:0000B2C4   177 0001:0000B2CB   180 0001:0000B2CC
+   181 0001:0000B2EB   185 0001:0000B358   186 0001:0000B374   187 0001:0000B390
+   189 0001:0000B3B9   192 0001:0000B405   195 0001:0000B433   199 0001:0000B528
+   200 0001:0000B52F   204 0001:0000B530   205 0001:0000B535   210 0001:0000B538
+   211 0001:0000B53B   212 0001:0000B556   213 0001:0000B562   216 0001:0000B5A4
+   217 0001:0000B5A7   218 0001:0000B5C2   219 0001:0000B5CE   222 0001:0000B618
+   223 0001:0000B61B   224 0001:0000B636   225 0001:0000B642   232 0001:0000B684
+   233 0001:0000B689   236 0001:0000B68C   237 0001:0000B692   238 0001:0000B6CF
+   239 0001:0000B6E8   240 0001:0000B6F1   241 0001:0000B70F   242 0001:0000B72D
+   243 0001:0000B74B   244 0001:0000B754   245 0001:0000B75D   247 0001:0000B764
+   252 0001:0000B76C   254 0001:0000B76F   256 0001:0000B77C   258 0001:0000B789
+   260 0001:0000B796   261 0001:0000B79F   264 0001:0000B7A4   265 0001:0000B7BA
+   266 0001:0000B7C7   267 0001:0000B7D4   268 0001:0000B7E1   269 0001:0000B807
+   280 0001:0000B850   283 0001:0000B877   286 0001:0000B889   287 0001:0000B896
+   289 0001:0000B8BA   290 0001:0000B8CF   292 0001:0000B8DC   293 0001:0000B8F9
+   294 0001:0000B92C   295 0001:0000B937   296 0001:0000B952   297 0001:0000B98F
+   299 0001:0000B9CA   300 0001:0000B9E5   302 0001:0000BA0F   303 0001:0000BA62
+   287 0001:0000BA63   304 0001:0000BA6A   305 0001:0000BA7A   284 0001:0000BA87
+   308 0001:0000BA9C   309 0001:0000BAAA   315 0001:0000BB14   316 0001:0000BB65
+   317 0001:0000BB67   318 0001:0000BB79   319 0001:0000BB8B   321 0001:0000BBB2
+   325 0001:0000BC25   327 0001:0000BC27   329 0001:0000BC52   330 0001:0000BC7B
+   332 0001:0000BCA4   333 0001:0000BCB2   334 0001:0000BCB9   335 0001:0000BCC2
+   336 0001:0000BCCB   337 0001:0000BCD1   338 0001:0000BCD6   339 0001:0000BCDB
+   341 0001:0000BCE0   342 0001:0000BCEB   343 0001:0000BCEF   345 0001:0000BCF3
+   349 0001:0000BD5A   351 0001:0000BF10   352 0001:0000BF33   354 0001:0000BF41
+   356 0001:0000BF46   357 0001:0000BF51   359 0001:0000BF5B   361 0001:0000BF80
+   363 0001:0000BF8C   364 0001:0000BF9E   365 0001:0000BFB0   366 0001:0000BFB7
+   367 0001:0000BFC9   370 0001:0000BFD7   371 0001:0000BFE9   372 0001:0000BFFB
+   373 0001:0000C002   374 0001:0000C014   377 0001:0000C022   378 0001:0000C034
+   379 0001:0000C046   380 0001:0000C04D   381 0001:0000C05F   384 0001:0000C06D
+   385 0001:0000C07F   386 0001:0000C091   387 0001:0000C098   388 0001:0000C0AA
+   392 0001:0000C0C5   393 0001:0000C0D1   395 0001:0000C108   397 0001:0000C10D
+   399 0001:0000C11F   401 0001:0000C1AB
+
+Line numbers for Unit6(Unit6.pas) segment .text
+
+    53 0001:00000000
+
+Line numbers for Analiz(Analiz.dpr) segment .itext
+
+    22 0002:00000320    23 0002:00000337    27 0002:0000033E    28 0002:0000034A
+    29 0002:0000035D    31 0002:00000370    32 0002:00000379    33 0002:00000380
+
+Bound resource files
+
+uDataModule.dfm
+uDBGridFrame.dfm
+Unit5.dfm
+uAddEditOTKLForm.dfm
+uViewForm.dfm
+uAboutForm.dfm
+uMainForm.dfm
+uWaitForm.dfm
+uAddEditLINEForm.dfm
+uAddEditPSForm.dfm
+uAddEditRESForm.dfm
+uSpravForm.dfm
+Unit6.dfm
+Analiz.res
+Analiz.drf
+
+
+Program entry point at 0002:00000320

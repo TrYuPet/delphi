@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2010.10.19 18:43:06.497.pas,D:\« Документы »\«Мои документы»\RAD Studio\Projects\Unit1.pas=D:\« Документы »\- Yurka -\Моя учёба\Практика производственная 2010\Программа\Unit1.pas</Transaction>
+    <Transaction>2010.10.19 18:43:06.497.dfm,D:\« Документы »\«Мои документы»\RAD Studio\Projects\Unit1.dfm=D:\« Документы »\- Yurka -\Моя учёба\Практика производственная 2010\Программа\Unit1.dfm</Transaction>
+    <Transaction>2010.10.19 18:43:18.738.dproj,D:\« Документы »\«Мои документы»\RAD Studio\Projects\Project1.dproj=D:\« Документы »\- Yurka -\Моя учёба\Практика производственная 2010\Программа\Analiz.dproj</Transaction>
+    <Transaction>2010.10.19 22:01:45.783.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\Программа\Unit7.pas=</Transaction>
+    <Transaction>2010.10.19 22:01:45.783.dfm,E:\« ПРОЕКТЫ »\__temp\12123131231\Программа\Unit7.dfm=</Transaction>
+    <Transaction>2010.10.21 19:51:21.453.pas,B:\DOSBox-0.73\DATA\Программа\Unit7.pas=B:\DOSBox-0.73\DATA\Программа\uAboutForm.pas</Transaction>
+    <Transaction>2010.10.21 19:51:21.453.dfm,B:\DOSBox-0.73\DATA\Программа\Unit7.dfm=B:\DOSBox-0.73\DATA\Программа\uAboutForm.dfm</Transaction>
+    <Transaction>2010.10.22 00:02:35.862.pas,B:\DOSBox-0.73\DATA\Программа\Unit2.pas=B:\DOSBox-0.73\DATA\Программа\uViewForm.pas</Transaction>
+    <Transaction>2010.10.22 00:02:35.862.dfm,B:\DOSBox-0.73\DATA\Программа\Unit2.dfm=B:\DOSBox-0.73\DATA\Программа\uViewForm.dfm</Transaction>
+    <Transaction>2010.10.22 00:02:56.825.pas,B:\DOSBox-0.73\DATA\Программа\Unit4.pas=B:\DOSBox-0.73\DATA\Программа\uMainForm.pas</Transaction>
+    <Transaction>2010.10.22 00:02:56.825.dfm,B:\DOSBox-0.73\DATA\Программа\Unit4.dfm=B:\DOSBox-0.73\DATA\Программа\uMainForm.dfm</Transaction>
+    <Transaction>2010.10.22 00:05:56.105.pas,B:\DOSBox-0.73\DATA\Программа\Unit1.pas=B:\DOSBox-0.73\DATA\Программа\uSpravForm.pas</Transaction>
+    <Transaction>2010.10.22 00:05:56.105.dfm,B:\DOSBox-0.73\DATA\Программа\Unit1.dfm=B:\DOSBox-0.73\DATA\Программа\uSpravForm.dfm</Transaction>
+    <Transaction>2010.10.24 20:34:05.121.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\Unit2.pas=E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\uDataModule.pas</Transaction>
+    <Transaction>2010.10.24 20:34:05.121.dfm,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\Unit2.dfm=E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\uDataModule.dfm</Transaction>
+    <Transaction>2010.10.24 20:34:20.275.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\Unit1.pas=E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\uDBGridFrame.pas</Transaction>
+    <Transaction>2010.10.24 20:34:20.275.dfm,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\Unit1.dfm=E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\uDBGridFrame.dfm</Transaction>
+    <Transaction>2010.10.27 21:01:34.296.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\Unit3.pas=E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\uAddEditRESForm.pas</Transaction>
+    <Transaction>2010.10.27 21:01:34.296.dfm,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\Unit3.dfm=E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\uAddEditRESForm.dfm</Transaction>
+    <Transaction>2010.10.31 15:12:28.066.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\exdbgrid\ExDBGrid.pas=</Transaction>
+    <Transaction>2010.11.03 23:36:54.776.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\DBGrids.pas=E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\MyDBGrids.pas</Transaction>
+    <Transaction>2010.11.04 16:20:49.531.pas,D:\Документы\RAD Studio\Projects\Программа\acDBGrid.pas=D:\Документы\RAD Studio\Projects\Программа\HackacDBGrid.pas</Transaction>
+    <Transaction>2010.11.04 19:43:11.804.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\VKDBF\VKDBFCDX.pas=</Transaction>
+    <Transaction>2010.11.04 19:43:11.981.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\VKDBF\VKDBFCollate.pas=</Transaction>
+    <Transaction>2010.11.04 19:43:12.011.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\VKDBF\VKDBFCrypt.pas=</Transaction>
+    <Transaction>2010.11.04 19:43:12.027.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\VKDBF\VKDBFDataSet.pas=</Transaction>
+    <Transaction>2010.11.04 19:43:12.057.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\VKDBF\VKDBFGostCrypt.pas=</Transaction>
+    <Transaction>2010.11.04 19:43:12.085.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\VKDBF\VKDBFIndex.pas=</Transaction>
+    <Transaction>2010.11.04 19:43:12.112.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\VKDBF\VKDBFLogger.pas=</Transaction>
+    <Transaction>2010.11.04 19:43:12.140.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\VKDBF\VKDBFMemMgr.pas=</Transaction>
+    <Transaction>2010.11.04 19:43:12.167.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\VKDBF\VKDBFNTX.pas=</Transaction>
+    <Transaction>2010.11.04 19:43:12.195.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\VKDBF\VKDBFParser.pas=</Transaction>
+    <Transaction>2010.11.04 19:43:12.223.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\VKDBF\VKDBFPrx.pas=</Transaction>
+    <Transaction>2010.11.04 19:43:12.253.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\VKDBF\VKDBFSortedList.pas=</Transaction>
+    <Transaction>2010.11.04 19:43:12.280.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\VKDBF\VKDBFSorters.pas=</Transaction>
+    <Transaction>2010.11.04 19:43:12.324.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\VKDBF\VKDBFUtil.pas=</Transaction>
+    <Transaction>2010.11.04 19:43:18.998.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\MyDBGrids.pas=</Transaction>
+    <Transaction>2010.11.04 21:44:04.087.pas,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\Unit1.pas=E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\uAddEditOTKLForm.pas</Transaction>
+    <Transaction>2010.11.04 21:44:04.087.dfm,E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\Unit1.dfm=E:\« ПРОЕКТЫ »\__temp\12123131231\DATA\Программа\uAddEditOTKLForm.dfm</Transaction>
+    <Transaction>2010.11.05 11:39:36.468.pas,G:\DATA\Программа\HackacDBGrid.pas=</Transaction>
+    <Transaction>2010.11.13 11:58:07.899.pas,D:\Программа\Unit1.pas=D:\Программа\uOtchetForm.pas</Transaction>
+    <Transaction>2010.11.13 11:58:07.899.dfm,D:\Программа\Unit1.dfm=D:\Программа\uOtchetForm.dfm</Transaction>
+    <Transaction>2010.11.26 19:17:47.912.pas,D:\Программа\uOtchetForm.pas=</Transaction>
+    <Transaction>2010.11.26 19:17:47.912.dfm,D:\Программа\uOtchetForm.dfm=</Transaction>
+    <Transaction>2010.11.26 19:58:47.805.pas,D:\Программа\uAboutForm.pas=</Transaction>
+    <Transaction>2010.11.26 19:58:47.805.dfm,D:\Программа\uAboutForm.dfm=</Transaction>
+    <Transaction>2010.11.28 19:18:14.445.pas,D:\Программа\uReportForm.pas=</Transaction>
+    <Transaction>2010.11.28 19:18:14.446.dfm,D:\Программа\uReportForm.dfm=</Transaction>
+    <Transaction>2011.05.28 14:38:41.760.pas,D:\Программа\Unit1.pas=D:\Программа\uSplashForm.pas</Transaction>
+    <Transaction>2011.05.28 14:38:41.760.dfm,D:\Программа\Unit1.dfm=D:\Программа\uSplashForm.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

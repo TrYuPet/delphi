@@ -1,0 +1,329 @@
+object ViewForm: TViewForm
+  Left = 0
+  Top = 0
+  Caption = #1046#1091#1088#1085#1072#1083' '#1072#1074#1072#1088#1080#1081#1085#1099#1093' '#1086#1090#1082#1083#1102#1095#1077#1085#1080#1081
+  ClientHeight = 276
+  ClientWidth = 1189
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  OnKeyUp = FormKeyUp
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnlTop: TsPanel
+    Left = 0
+    Top = 0
+    Width = 1189
+    Height = 66
+    Align = alTop
+    BorderWidth = 5
+    TabOrder = 0
+    SkinData.SkinSection = 'TOOLBAR'
+    object btnDivider1: TsSpeedButton
+      Tag = 3
+      Left = 306
+      Top = 6
+      Width = 10
+      Height = 54
+      Align = alLeft
+      GroupIndex = 1
+      Flat = True
+      ButtonStyle = tbsDivider
+      SkinData.SkinSection = 'DIVIDER'
+      Reflected = True
+      ExplicitLeft = 334
+    end
+    object btnHelp: TsSpeedButton
+      Left = 1083
+      Top = 6
+      Width = 100
+      Height = 54
+      Align = alRight
+      Caption = #1057#1087#1088#1072#1074#1082#1072
+      Flat = True
+      OnClick = btnHelpClick
+      SkinData.SkinSection = 'TOOLBUTTON'
+      ImageIndex = 7
+      Images = DataModule1.ImageList32
+      Reflected = True
+      ExplicitLeft = 620
+    end
+    object btnAdd: TsSpeedButton
+      Tag = 3
+      Left = 6
+      Top = 6
+      Width = 100
+      Height = 54
+      Align = alLeft
+      Caption = #1044#1086#1073#1072#1074#1080#1090#1100
+      Flat = True
+      OnClick = btnAddClick
+      SkinData.SkinSection = 'TOOLBUTTON'
+      ImageIndex = 0
+      Images = DataModule1.ImageList32
+      Reflected = True
+      ExplicitLeft = 256
+    end
+    object btnDel: TsSpeedButton
+      Tag = 3
+      Left = 106
+      Top = 6
+      Width = 100
+      Height = 54
+      Align = alLeft
+      Caption = #1059#1076#1072#1083#1080#1090#1100
+      Flat = True
+      OnClick = btnDelClick
+      SkinData.SkinSection = 'TOOLBUTTON'
+      ImageIndex = 2
+      Images = DataModule1.ImageList32
+      Reflected = True
+      ExplicitLeft = 465
+    end
+    object btnEdit: TsSpeedButton
+      Tag = 3
+      Left = 206
+      Top = 6
+      Width = 100
+      Height = 54
+      Align = alLeft
+      Caption = #1048#1079#1084#1077#1085#1080#1090#1100
+      Flat = True
+      OnClick = btnEditClick
+      SkinData.SkinSection = 'TOOLBUTTON'
+      ImageIndex = 1
+      Images = DataModule1.ImageList32
+      Reflected = True
+      ExplicitLeft = 552
+    end
+    object sSpeedButton2: TsSpeedButton
+      Tag = 3
+      Left = 316
+      Top = 6
+      Width = 100
+      Height = 54
+      Align = alLeft
+      Caption = #1054#1090#1095#1077#1090
+      Flat = True
+      OnClick = sSpeedButton2Click
+      SkinData.SkinSection = 'TOOLBUTTON'
+      ImageIndex = 4
+      Images = DataModule1.ImageList32
+      Reflected = True
+      ExplicitLeft = 422
+    end
+  end
+  inline DBGridFrame1: TDBGridFrame
+    Left = 0
+    Top = 66
+    Width = 1189
+    Height = 210
+    Align = alClient
+    DoubleBuffered = False
+    ParentDoubleBuffered = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 1
+    ExplicitTop = 66
+    ExplicitWidth = 1189
+    ExplicitHeight = 210
+    inherited DBGrid: TsDBGrid
+      Width = 1189
+      Height = 210
+      DataSource = DataModule1.DS_JUR
+      OnDblClick = DBGridFrame1DBGridDblClick
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'MES'
+          Width = 64
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'MESJAC'
+          Width = 94
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'K_RES'
+          Width = 64
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'K_PS'
+          Width = 64
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'NAME_PS'
+          Width = 124
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'K_LIN'
+          Width = 34
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'DATA_OTKL'
+          Width = 64
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'PRICHINA'
+          Width = 244
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'KOD'
+          Width = 64
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'TIME_OL'
+          Width = 47
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'TIME_OT'
+          Width = 48
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'TIME_VL'
+          Width = 45
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'TIME_VT'
+          Width = 124
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'PROD_OL'
+          Width = 51
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'PROD_OT'
+          Width = 52
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'OTLKBALANS'
+          Width = 304
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'POTR_NP'
+          Width = 64
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'POTR_TP'
+          Width = 64
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'POTR_FERM'
+          Width = 64
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'POTR_NEDK'
+          Width = 64
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'POTR_ABP'
+          Width = 64
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'AVT_POGODA'
+          Width = 304
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'POVRZ_ELMT'
+          Width = 244
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'POVRZ_KOL'
+          Width = 64
+          Visible = True
+        end>
+    end
+  end
+  object sSkinProvider: TsSkinProvider
+    AddedTitle.Font.Charset = DEFAULT_CHARSET
+    AddedTitle.Font.Color = clNone
+    AddedTitle.Font.Height = -11
+    AddedTitle.Font.Name = 'Verdana'
+    AddedTitle.Font.Style = [fsItalic]
+    AddedTitle.Text = '   '#169' YuRik, 2011'
+    CaptionAlignment = taCenter
+    SkinData.SkinSection = 'FORM'
+    MakeSkinMenu = True
+    ScreenSnap = True
+    ShowAppIcon = False
+    TitleButtons = <>
+    Left = 280
+    Top = 312
+  end
+  object xlReport: TxlReport
+    DataExportMode = xdmCSV
+    Options = [xroDisplayAlerts, xroAutoOpen]
+    XLSTemplate = 'template\JUR.xlt'
+    DataSources = <
+      item
+        DataSet = DataModule1.DBF_JUR
+        Alias = 'DBF_JUR'
+        Range = 'JURRange'
+        Options = [xrgoAutoOpen, xrgoPreserveRowHeight]
+        Tag = 0
+      end>
+    Preview = True
+    Params = <>
+    Left = 480
+    Top = 152
+  end
+  object xlProPackage: TxlProPackage
+    About = 
+      'ProOptionPack'#8482' 1.2 (build 122-D7)   - Copyright '#169' Afalina Co., L' +
+      'td.'
+    Left = 552
+    Top = 144
+  end
+end

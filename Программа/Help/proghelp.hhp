@@ -1,0 +1,23 @@
+[OPTIONS]
+Auto Index=Yes
+Auto TOC=9
+Compatibility=1.1 or later
+Compiled file=proghelp.chm
+Contents file=Table of Contents.hhc
+Default Window=qq
+Default topic=my.html
+Display compile progress=No
+Enhanced decompilation=Yes
+Index file=Index.hhk
+Language=0x419 Русский (Россия)
+Title=Справка по программе
+
+[WINDOWS]
+qq="Справка по программе","Table of Contents.hhc","Index.hhk","my.html",,,,,,0x2501,100,0x204c,,,,,,,,0
+
+
+[FILES]
+my.html
+
+[INFOTYPES]
+

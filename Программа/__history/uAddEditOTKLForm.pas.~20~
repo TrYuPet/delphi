@@ -1,0 +1,687 @@
+unit uAddEditOTKLForm;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, sComboBox, sSpinEdit, sEdit, sSkinProvider, sDBNavigator,
+  DBCtrls, sDBLookupComboBox, Mask, sMaskEdit, sCustomComboEdit, sTooledit,
+  sLabel, sGroupBox, Buttons, sBitBtn, ExtCtrls, sPanel;
+
+type
+  TAddEditOTKLForm = class(TForm)
+    sPanel: TsPanel;
+    btnCancel: TsBitBtn;
+    btnSave: TsBitBtn;
+    sDBNavigator: TsDBNavigator;
+    CategoryPanelGroup1: TCategoryPanelGroup;
+    CategoryPanel4: TCategoryPanel;
+    sLabelFX14: TsLabelFX;
+    sLabelFX15: TsLabelFX;
+    sLabelFX16: TsLabelFX;
+    sLabelFX17: TsLabelFX;
+    sLabelFX18: TsLabelFX;
+    sLabelFX19: TsLabelFX;
+    sLabelFX20: TsLabelFX;
+    sLabelFX21: TsLabelFX;
+    sLabelFX22: TsLabelFX;
+    sLabelFX23: TsLabelFX;
+    edtPOTR_NP: TEdit;
+    edtPOTR_TP: TEdit;
+    edtPOTR_FERM: TEdit;
+    edtPOTR_ABP: TEdit;
+    edtPOTR_ABM: TEdit;
+    edtPOTR_NEDK: TEdit;
+    edtPOTR_KES: TEdit;
+    edtPOTR_1KAT: TEdit;
+    edtPOTR_2KAT: TEdit;
+    CategoryPanel3: TCategoryPanel;
+    sLabelFX11: TsLabelFX;
+    sLabelFX13: TsLabelFX;
+    cmbPOVRZ_ELMT: TsComboBox;
+    edtPOVRZ_KOL: TEdit;
+    CategoryPanel2: TCategoryPanel;
+    sLabelFX10: TsLabelFX;
+    sLabelFX12: TsLabelFX;
+    cmbZACH_SHEMA: TsComboBox;
+    cmbAVT_1POLE: TsComboBox;
+    cmbAVT_2POLE: TsComboBox;
+    cmbAVT_POGODA: TsComboBox;
+    CategoryPanel1: TCategoryPanel;
+    sSkinProvider: TsSkinProvider;
+    cmbListLine: TsDBLookupComboBox;
+    cmbListPS: TsDBLookupComboBox;
+    cmbOTLKBALANS: TsComboBox;
+    cmbPrichina: TsComboBox;
+    edtDate: TsDateEdit;
+    edtKOD: TsSpinEdit;
+    edtPROD_OL: TsMaskEdit;
+    edtPROD_OT: TsMaskEdit;
+    edtTIME_OL: TsMaskEdit;
+    edtTIME_OT: TsMaskEdit;
+    edtTIME_VL: TsMaskEdit;
+    edtTIME_VT: TsMaskEdit;
+    sLabelFX1: TsLabelFX;
+    sLabelFX2: TsLabelFX;
+    sLabelFX3: TsLabelFX;
+    sLabelFX4: TsLabelFX;
+    sLabelFX5: TsLabelFX;
+    sLabelFX6: TsLabelFX;
+    sLabelFX7: TsLabelFX;
+    sLabelFX8: TsLabelFX;
+    sLabelFX9: TsLabelFX;
+    sLabel1: TsLabel;
+    memOSN_POTR: TMemo;
+    procedure FormCreate(Sender: TObject);
+    procedure btnSaveClick(Sender: TObject);
+    procedure cmbListPSClick(Sender: TObject);
+    procedure sDBNavigatorClick(Sender: TObject; Button: TNavigateBtn);
+    procedure edtTIMEChange(Sender: TObject);
+  private
+    { Private declarations }
+    function GetKODPS: string;
+    procedure SetKODPS(value: string);
+    function GetNumber: string;
+    procedure SetNumber(value: string);
+    function GetDate: string;
+    procedure SetDate(value: string);
+    function GetTIME_OL: string;
+    procedure SetTIME_OL(value: string);
+    function GetTIME_OT: string;
+    procedure SetTIME_OT(value: string);
+    function GeTIME_VL: string;
+    procedure SetTIME_VL(value: string);
+    function GetTIME_VT: string;
+    procedure SetTIME_VT(value: string);
+    function GetPROD_OL: string;
+    procedure SetPROD_OL(value: string);
+    function GetPROD_OT: string;
+    procedure SetPROD_OT(value: string);
+    function GetKOD: string;
+    procedure SetKOD(value: string);
+    function GetPOVRZ_KOL: string;
+    procedure SetPOVRZ_KOL(value: string);
+   function GetPOTR_NP: string;
+    procedure SetPOTR_NP(value: string);
+    function GetPOTR_TP: string;
+    procedure SetPOTR_TP(value: string);
+    function GetPOTR_FERM: string;
+    procedure SetPOTR_FERM(value: string);
+    function GetPOTR_KES: string;
+    procedure SetPOTR_KES(value: string);
+    function GetPOTR_ABM: string;
+    procedure SetPOTR_ABM(value: string);
+    function GetPOTR_NEDK: string;
+    procedure SetPOTR_NEDK(value: string);
+    function GetPOTR_1KAT: string;
+    procedure SetPOTR_1KAT(value: string);
+    function GetPOTR_ABP: string;
+    procedure SetPOTR_ABP(value: string);
+    function GetPOTR_2KAT: string;
+    procedure SetPOTR_2KAT(value: string);
+    function GetPrichina: string;
+    procedure SetPrichina(value: string);
+    function GetOTLKBALANS: string;
+    procedure SetOTLKBALANS(value: string);
+    function GetZACH_SHEMA: string;
+    procedure SetZACH_SHEMA(value: string);
+    function GetAVT_1POLE: string;
+    procedure SetAVT_1POLE(value: string);
+    function GetAVT_2POLE: string;
+    procedure SetAVT_2POLE(value: string);
+    function GetAVT_POGODA: string;
+    procedure SetAVT_POGODA(value: string);
+    function GetPOVRZ_ELMT: string;
+    procedure SetPOVRZ_ELMT(value: string);
+  public
+    { Public declarations }
+    property KODPS: string read GetKODPS write SetKODPS;
+    property Number: string read GetNumber write SetNumber;
+    property Date: string read GetDate write SetDate;
+    property TIME_OL: string read GetTIME_OL write SetTIME_OL;
+    property TIME_OT: string read GetTIME_OT write SetTIME_OT;
+    property TIME_VL: string read GeTIME_VL write SetTIME_VL;
+    property TIME_VT: string read GetTIME_VT write SetTIME_VT;
+    property PROD_OL: string read GetPROD_OL write SetPROD_OL;
+    property PROD_OT: string read GetPROD_OT write SetPROD_OT;
+    property KOD: string read GetKOD write SetKOD;
+    property POVRZ_KOL: string read GetPOVRZ_KOL write SetPOVRZ_KOL;
+    property POTR_NP: string read GetPOTR_NP write SetPOTR_NP;
+    property POTR_TP: string read GetPOTR_TP write SetPOTR_TP;
+    property POTR_FERM: string read GetPOTR_FERM write SetPOTR_FERM;
+    property POTR_KES: string read GetPOTR_KES write SetPOTR_KES;
+    property POTR_ABM: string read GetPOTR_ABM write SetPOTR_ABM;
+    property POTR_NEDK: string read GetPOTR_NEDK write SetPOTR_NEDK;
+    property POTR_1KAT: string read GetPOTR_1KAT write SetPOTR_1KAT;
+    property POTR_ABP: string read GetPOTR_ABP write SetPOTR_ABP;
+    property POTR_2KAT: string read GetPOTR_2KAT write SetPOTR_2KAT;
+    property Prichina: string read GetPrichina write SetPrichina;
+    property OTLKBALANS: string read GetOTLKBALANS write SetOTLKBALANS;
+    property ZACH_SHEMA: string read GetZACH_SHEMA write SetZACH_SHEMA;
+    property AVT_1POLE: string read GetAVT_1POLE write SetAVT_1POLE;
+    property AVT_2POLE: string read GetAVT_2POLE write SetAVT_2POLE;
+    property AVT_POGODA: string read GetAVT_POGODA write SetAVT_POGODA;
+    property POVRZ_ELMT: string read GetPOVRZ_ELMT write SetPOVRZ_ELMT;
+    constructor Create(AOwner: TComponent); overload; override;
+    constructor Create(AOwner: TComponent; Edit: Boolean=False); overload;
+  end;
+
+var
+  AddEditOTKLForm: TAddEditOTKLForm;
+
+implementation
+
+uses uDataModule;
+
+{$R *.dfm}
+
+////////////////////////////////////////////////////////////////////////////////
+
+constructor TAddEditOTKLForm.Create(AOwner: TComponent);
+begin
+  inherited;
+  Caption:= 'Добавление отключения'
+end;
+
+constructor TAddEditOTKLForm.Create(AOwner: TComponent; Edit: Boolean);
+begin
+  inherited Create(Owner);
+  if Edit then
+      Caption:= 'Изменение отключения'
+  else
+      Caption:= 'Добавление отключения';
+  // Фидер
+  cmbListLine.KeyField:= 'K_LIN';
+  cmbListLine.ListSource:= uDataModule.DataModule1.DS_LIN;
+  cmbListLine.ListField:= 'K_LIN';
+  // ПС
+  cmbListPS.KeyField:= 'K_PS';
+  cmbListPS.ListSource:= uDataModule.DataModule1.DS_PS;
+  cmbListPS.ListField:= 'NAME_PS';
+  //
+  sDBNavigator.DataSource:= uDataModule.DataModule1.DS_JUR;
+end;
+
+procedure TAddEditOTKLForm.edtTIMEChange(Sender: TObject);
+begin
+  Text:= Trim(Text)
+end;
+
+procedure TAddEditOTKLForm.FormCreate(Sender: TObject);
+begin
+  cmbPrichina.Items.Add('АПВ успешное');
+  cmbPrichina.Items.Add('ТУ успешное');
+  cmbPrichina.Items.Add('ОПОРЫ механич. повреждения');
+  cmbPrichina.Items.Add('ОПОРЫ прочие');
+  cmbPrichina.Items.Add('ПРОВОДА механич. повреждения');
+  cmbPrichina.Items.Add('ПРОВОДА наброс и др. возд.');
+  cmbPrichina.Items.Add('ПРОВОДА падение и касан.дер.');
+  cmbPrichina.Items.Add('ПРОВОДА обрыв');
+  cmbPrichina.Items.Add('ПРОВОДА прочие');
+  cmbPrichina.Items.Add('ИЗОЛЯТОРЫ эл. пробой');
+  cmbPrichina.Items.Add('ИЗОЛЯТОРЫ механич. поврежден');
+  cmbPrichina.Items.Add('ИЗОЛЯТОРЫ прочие');
+  cmbPrichina.Items.Add('РЛНД-10 пробой изоляции');
+  cmbPrichina.Items.Add('РЛНД-10 перегор. шлейф.');
+  cmbPrichina.Items.Add('РЛНД-10 прочие');
+  cmbPrichina.Items.Add('ВЯЗКИ обрыв');
+  cmbPrichina.Items.Add('ВЯЗКИ прочие');
+  cmbPrichina.Items.Add('КАБЕЛИ пробой соед. муфты');
+  cmbPrichina.Items.Add('КАБЕЛИ пробой конц. муфты');
+  cmbPrichina.Items.Add('КАБЕЛИ пробой кабеля');
+  cmbPrichina.Items.Add('КАБЕЛИ пробой каб. вставки');
+  cmbPrichina.Items.Add('КАБЕЛИ механич. повреждения');
+  cmbPrichina.Items.Add('КАБЕЛИ прочие');
+  cmbPrichina.Items.Add('ПОВР. НА ТП трансформатор');
+  cmbPrichina.Items.Add('ПОВР. НА ТП оборудование ТП');
+  cmbPrichina.Items.Add('ПОВР. НА ТП пробой изоляции');
+  cmbPrichina.Items.Add('ПОВР. НА ТП прочие');
+  cmbPrichina.Items.Add('ПРОЧИЕ падение и касан.дер.');
+  cmbPrichina.Items.Add('ПРОЧИЕ перекрытие птицей');
+  cmbPrichina.Items.Add('ПРОЧИЕ посторонние воздейств');
+  cmbPrichina.Items.Add('ПРОЧИЕ прочие');
+  cmbPrichina.Items.Add('НЕ УСТАНОВЛЕНА');
+  cmbPrichina.ItemIndex:= cmbPrichina.Items.Count-1;
+  cmbOTLKBALANS.Items.Add('нет');
+  cmbOTLKBALANS.Items.Add('Энергосистемы (ЭС)');
+  cmbOTLKBALANS.Items.Add('ЭС, с повреждением на участке смежника(потр-ля)');
+  cmbOTLKBALANS.Items.Add('смежника (потребителя)');
+  cmbOTLKBALANS.ItemIndex:= cmbOTLKBALANS.Items.Count-4;
+  cmbZACH_SHEMA.Items.Add('Нормальная');
+  cmbZACH_SHEMA.Items.Add('Ненормальная');
+  cmbZACH_SHEMA.ItemIndex:= cmbZACH_SHEMA.Items.Count-2;
+  cmbAVT_1POLE.Items.Add('нет');
+  cmbAVT_1POLE.Items.Add('АПВ');
+  cmbAVT_1POLE.Items.Add('АВР');
+  cmbAVT_1POLE.Items.Add('АВЛ');
+  cmbAVT_1POLE.Items.Add('ТУ');
+  cmbAVT_1POLE.Items.Add('Вручную');
+  cmbAVT_1POLE.Items.Add('нет');
+  cmbAVT_1POLE.ItemIndex:= cmbAVT_1POLE.Items.Count-7;
+  cmbAVT_2POLE.Items.Add('нет');
+  cmbAVT_2POLE.Items.Add('Неуспешно');
+  cmbAVT_2POLE.Items.Add('Успешно');
+  cmbAVT_2POLE.ItemIndex:= cmbAVT_2POLE.Items.Count-3;
+  cmbAVT_POGODA.Items.Add('Нормальная');
+  cmbAVT_POGODA.Items.Add('Гроза');
+  cmbAVT_POGODA.Items.Add('Сильный ветер');
+  cmbAVT_POGODA.Items.Add('Ветер более 20 м/с');
+  cmbAVT_POGODA.Items.Add('Ветер с дождем');
+  cmbAVT_POGODA.Items.Add('Дождь');
+  cmbAVT_POGODA.Items.Add('Сильный дождь, ливень');
+  cmbAVT_POGODA.Items.Add('Ветер со снегом');
+  cmbAVT_POGODA.Items.Add('Мокрый снег');
+  cmbAVT_POGODA.Items.Add('Метель');
+  cmbAVT_POGODA.Items.Add('Гололед');
+  cmbAVT_POGODA.Items.Add('Град');
+  cmbAVT_POGODA.ItemIndex:= cmbAVT_POGODA.Items.Count-12;
+  cmbPOVRZ_ELMT.Items.Add('нет');
+  cmbPOVRZ_ELMT.Items.Add('Выключатель');
+  cmbPOVRZ_ELMT.Items.Add('Вязка');
+  cmbPOVRZ_ELMT.Items.Add('Изолятор');
+  cmbPOVRZ_ELMT.Items.Add('Кабель');
+  cmbPOVRZ_ELMT.Items.Add('Концевая муфта');
+  cmbPOVRZ_ELMT.Items.Add('Опора');
+  cmbPOVRZ_ELMT.Items.Add('Предохранитель');
+  cmbPOVRZ_ELMT.Items.Add('Провод');
+  cmbPOVRZ_ELMT.Items.Add('Разрядник');
+  cmbPOVRZ_ELMT.Items.Add('Разъединитель');
+  cmbPOVRZ_ELMT.Items.Add('Соединительная муфта');
+  cmbPOVRZ_ELMT.Items.Add('Траверза');
+  cmbPOVRZ_ELMT.Items.Add('Транасформатор');
+  cmbPOVRZ_ELMT.Items.Add('Шлейфа 10 кВт');
+  cmbPOVRZ_ELMT.Items.Add('Трансформатор тока');
+  cmbPOVRZ_ELMT.Items.Add('Отсутствуют');
+  cmbPOVRZ_ELMT.ItemIndex:= cmbPOVRZ_ELMT.Items.Count-17;
+
+end;
+
+procedure TAddEditOTKLForm.btnSaveClick(Sender: TObject);
+begin // проверяем правильность ввода
+  if (edtDate.Text<>'') and (cmbListPS.Text<>'') and (cmbListLine.Text<>'') then
+    begin
+      // всё ок
+      //
+      ModalResult:= mrOk
+    end
+  else
+    MessageBox(Self.Handle, PChar('ВНИМАНИЕ'#10'Заполните все поля'),
+        PChar(Self.Caption), MB_ICONWARNING or MB_OK)
+end;
+
+////////////////////////////////////////////////////////////////////////////////
+
+procedure TAddEditOTKLForm.cmbListPSClick(Sender: TObject);
+var s: string;
+begin
+  s:= cmbListPS.KeyValue;
+  uDataModule.DataModule1.DBF_LIN.Filter:= 'K_PS='+s;
+  if not uDataModule.DataModule1.DBF_LIN.Filtered then
+    uDataModule.DataModule1.DBF_LIN.Filtered:= True
+end;
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+function TAddEditOTKLForm.GetDate: string;
+begin
+  Result:= DateToStr(edtDate.Date)
+end;
+
+procedure TAddEditOTKLForm.SetDate(value: string);
+begin
+  if value='' then raise Exception.Create('AddEditOTKLForm.SetDate пустая строка') else
+    edtDate.Date:= StrToDate(value)
+end;
+
+function TAddEditOTKLForm.GetKODPS: string;
+begin
+  Result:= cmbListPS.KeyValue
+end;
+
+procedure TAddEditOTKLForm.SetKODPS(value: string);
+begin
+  if value='' then raise Exception.Create('AddEditOTKLForm.SetDate пустая строка') else
+    cmbListPS.KeyValue:= value;
+end;
+
+function TAddEditOTKLForm.GetPOVRZ_KOL: string;
+begin
+  Result:= edtPOVRZ_KOL.Text
+end;
+
+procedure TAddEditOTKLForm.SetPOVRZ_KOL(value: string);
+begin
+  if value='' then
+    edtPOVRZ_KOL.Text:= '0'
+  else
+    edtPOVRZ_KOL.Text:= Trim(value)
+end;
+
+function TAddEditOTKLForm.GetPOTR_NP: string;
+begin
+  Result:= edtPOTR_NP.Text
+end;
+
+procedure TAddEditOTKLForm.SetPOTR_NP(value: string);
+begin
+  if value='' then
+    edtPOTR_NP.Text:= '0'
+  else
+    edtPOTR_NP.Text:= Trim(value)
+end;
+
+function TAddEditOTKLForm.GetPOTR_TP: string;
+begin
+  Result:= edtPOTR_NP.Text
+end;
+
+procedure TAddEditOTKLForm.SetPOTR_TP(value: string);
+begin
+  if value='' then
+    edtPOTR_TP.Text:= '0'
+  else
+    edtPOTR_TP.Text:= Trim(value)
+end;
+
+function TAddEditOTKLForm.GetPOTR_FERM: string;
+begin
+  Result:= edtPOTR_FERM.Text
+end;
+
+procedure TAddEditOTKLForm.SetPOTR_FERM(value: string);
+begin
+  if value='' then
+    edtPOTR_FERM.Text:= '0'
+  else
+    edtPOTR_FERM.Text:= Trim(value)
+end;
+
+function TAddEditOTKLForm.GetPOTR_KES: string;
+begin
+  Result:= edtPOTR_KES.Text
+end;
+
+procedure TAddEditOTKLForm.SetPOTR_KES(value: string);
+begin
+  if value='' then
+    edtPOTR_KES.Text:= '0'
+  else
+    edtPOTR_KES.Text:= Trim(value)
+end;
+
+function TAddEditOTKLForm.GetPOTR_ABM: string;
+begin
+  Result:= edtPOTR_ABM.Text
+end;
+
+procedure TAddEditOTKLForm.SetPOTR_ABM(value: string);
+begin
+  if value='' then
+    edtPOTR_ABM.Text:= '0'
+  else
+    edtPOTR_ABM.Text:= Trim(value)
+end;
+
+function TAddEditOTKLForm.GetPOTR_NEDK: string;
+begin
+  Result:= edtPOTR_NEDK.Text
+end;
+
+procedure TAddEditOTKLForm.SetPOTR_NEDK(value: string);
+begin
+  if value='' then
+    edtPOTR_NEDK.Text:= '0'
+  else
+    edtPOTR_NEDK.Text:= Trim(value)
+end;
+
+function TAddEditOTKLForm.GetPOTR_1KAT: string;
+begin
+  Result:= edtPOTR_1KAT.Text
+end;
+
+procedure TAddEditOTKLForm.SetPOTR_1KAT(value: string);
+begin
+  if value='' then
+    edtPOTR_1KAT.Text:= '0'
+  else
+    edtPOTR_1KAT.Text:= Trim(value)
+end;
+
+function TAddEditOTKLForm.GetPOTR_ABP: string;
+begin
+  Result:= edtPOTR_ABP.Text
+end;
+
+procedure TAddEditOTKLForm.SetPOTR_ABP(value: string);
+begin
+  if value='' then
+    edtPOTR_ABP.Text:= '0'
+  else
+    edtPOTR_ABP.Text:= Trim(value)
+end;
+
+function TAddEditOTKLForm.GetPOTR_2KAT: string;
+begin
+  Result:= edtPOTR_2KAT.Text
+end;
+
+procedure TAddEditOTKLForm.SetPOTR_2KAT(value: string);
+begin
+  if value='' then
+    edtPOTR_2KAT.Text:= '0'
+  else
+    edtPOTR_2KAT.Text:= Trim(value)
+end;
+
+function TAddEditOTKLForm.GetNumber: string;
+begin
+  Result:= cmbListLine.KeyValue
+end;
+
+procedure TAddEditOTKLForm.SetNumber(value: string);
+begin
+  if value='' then raise Exception.Create('AddEditOTKLForm.SetNumber пустая строка') else
+    cmbListLine.KeyValue:= value;
+end;
+
+function TAddEditOTKLForm.GetTIME_OL: string;
+begin
+  Result:= edtTIME_OL.EditText
+end;
+
+procedure TAddEditOTKLForm.SetTIME_OL(value: string);
+begin
+  if value='' then raise Exception.Create('AddEditOTKLForm.SetTIME_OL пустая строка') else
+    edtTIME_OL.Text:= value
+end;
+
+function TAddEditOTKLForm.GetTIME_OT: string;
+begin
+  Result:= edtTIME_OT.EditText
+end;
+
+procedure TAddEditOTKLForm.SetTIME_OT(value: string);
+begin
+  if value='' then raise Exception.Create('AddEditOTKLForm.SetTIME_OT пустая строка') else
+    edtTIME_OT.Text:= value
+end;
+
+function TAddEditOTKLForm.GetTIME_VT: string;
+begin
+  Result:= edtTIME_VT.EditText
+end;
+
+procedure TAddEditOTKLForm.SetTIME_VT(value: string);
+begin
+  if value='' then raise Exception.Create('AddEditOTKLForm.SetTIME_VT пустая строка') else
+    edtTIME_VT.Text:= value
+end;
+
+function TAddEditOTKLForm.GeTIME_VL: string;
+begin
+  Result:= edtTIME_VL.EditText
+end;
+
+procedure TAddEditOTKLForm.SetTIME_VL(value: string);
+begin
+  if value='' then raise Exception.Create('AddEditOTKLForm.SetTIME_VL пустая строка') else
+    edtTIME_VL.Text:= value
+end;
+
+function TAddEditOTKLForm.GetPROD_OL: string;
+begin
+  Result:= edtPROD_OL.EditText
+end;
+
+procedure TAddEditOTKLForm.SetPROD_OL(value: string);
+begin
+  if value='' then raise Exception.Create('AddEditOTKLForm.SetPROD_OL пустая строка') else
+    edtPROD_OL.Text:= value
+end;
+
+function TAddEditOTKLForm.GetPROD_OT: string;
+begin
+  Result:= edtPROD_OT.EditText
+end;
+
+procedure TAddEditOTKLForm.SetPROD_OT(value: string);
+begin
+  if value='' then raise Exception.Create('AddEditOTKLForm.SetPROD_OT пустая строка') else
+    edtPROD_OT.Text:= value
+end;
+
+function TAddEditOTKLForm.GetKOD: string;
+begin
+  Result:= edtKOD.Text
+end;
+
+procedure TAddEditOTKLForm.SetKOD(value: string);
+begin
+  if value='' then raise Exception.Create('AddEditOTKLForm.SetKOD пустая строка') else
+    edtKOD.Value:= StrToInt(value)
+end;
+
+function TAddEditOTKLForm.GetPrichina: string;
+begin
+  Result:= cmbPrichina.Text
+end;
+
+function TAddEditOTKLForm.GetOTLKBALANS: string;
+begin
+  Result:= cmbOTLKBALANS.Text
+end;
+
+function TAddEditOTKLForm.GetZACH_SHEMA: string;
+begin
+  Result:= cmbZACH_SHEMA.Text
+end;
+
+function TAddEditOTKLForm.GetAVT_1POLE: string;
+begin
+  Result:= cmbAVT_1POLE.Text
+end;
+
+function TAddEditOTKLForm.GetAVT_2POLE: string;
+begin
+  Result:= cmbAVT_2POLE.Text
+end;
+
+function TAddEditOTKLForm.GetAVT_POGODA: string;
+begin
+  Result:= cmbAVT_POGODA.Text
+end;
+
+function TAddEditOTKLForm.GetPOVRZ_ELMT: string;
+begin
+  Result:= cmbPOVRZ_ELMT.Text
+end;
+
+procedure TAddEditOTKLForm.SetPrichina(value: string);
+begin
+  if value='' then raise Exception.Create('AddEditOTKLForm.SetPrichina пустая строка') else
+    cmbPrichina.Text:= Trim(value)
+end;
+
+procedure TAddEditOTKLForm.SetOTLKBALANS(value: string);
+begin
+  if value='' then
+    cmbOTLKBALANS.Text:= 'нет'
+  else
+    cmbOTLKBALANS.Text:= Trim(value)
+end;
+
+procedure TAddEditOTKLForm.SetZACH_SHEMA(value: string);
+begin
+  if value='' then
+    cmbZACH_SHEMA.Text:= 'Нормальная'
+  else
+    cmbZACH_SHEMA.Text:= Trim(value)
+end;
+
+procedure TAddEditOTKLForm.SetAVT_1POLE(value: string);
+begin
+  if value='' then
+    cmbAVT_1POLE.Text:= 'нет'
+  else
+    cmbAVT_1POLE.Text:= Trim(value)
+end;
+
+procedure TAddEditOTKLForm.SetAVT_2POLE(value: string);
+begin
+  if value='' then
+    cmbAVT_2POLE.Text:= 'нет'
+  else
+    cmbAVT_2POLE.Text:= Trim(value)
+end;
+
+procedure TAddEditOTKLForm.SetAVT_POGODA(value: string);
+begin
+  if value='' then
+    cmbAVT_POGODA.Text:= 'Нормальная'
+  else
+    cmbAVT_POGODA.Text:= Trim(value)
+end;
+
+procedure TAddEditOTKLForm.SetPOVRZ_ELMT(value: string);
+begin
+  if value='' then
+    cmbPOVRZ_ELMT.Text:= 'нет'
+  else
+    cmbPOVRZ_ELMT.Text:= Trim(value)
+end;
+
+////////////////////////////////////////////////////////////////////////////////
+
+procedure TAddEditOTKLForm.sDBNavigatorClick(Sender: TObject;
+  Button: TNavigateBtn);
+begin
+  with uDataModule.DataModule1.DBF_JUR do
+  begin
+    KODPS:= FieldByName('K_PS').AsString;
+    if uDataModule.DataModule1.DBF_LIN.Filtered then
+      begin
+        uDataModule.DataModule1.DBF_LIN.Filtered:= False;
+        uDataModule.DataModule1.DBF_LIN.Filter:= ''
+      end;
+    cmbListLine.KeyValue:= FieldByName('K_LIN').AsString;
+    Date:= FieldByName('DATA_OTKL').AsString;
+    TIME_OL:= FieldByName('TIME_OLH').AsString+':'+FieldByName('TIME_OLM').AsString;
+    TIME_OT:= FieldByName('TIME_OTH').AsString+':'+FieldByName('TIME_OTM').AsString;
+    TIME_VL:= FieldByName('TIME_VLH').AsString+':'+FieldByName('TIME_VLM').AsString;
+    TIME_VT:= FieldByName('TIME_VTH').AsString+':'+FieldByName('TIME_VTM').AsString;
+    PROD_OL:= FieldByName('PROD_OLH').AsString+':'+FieldByName('PROD_OLM').AsString;
+    PROD_OT:= FieldByName('PROD_OTH').AsString+':'+FieldByName('PROD_OTM').AsString;
+    KOD:= FieldByName('KOD').AsString;
+    Prichina:= FieldByName('PRICHINA').AsString;
+    OTLKBALANS:= FieldByName('OTLKBALANS').AsString;
+    ZACH_SHEMA:= FieldByName('ZACH_SHEMA').AsString;
+    AVT_1POLE:= FieldByName('AVT_1POLE').AsString;
+    AVT_2POLE:= FieldByName('AVT_2POLE').AsString;
+    AVT_POGODA:= FieldByName('AVT_POGODA').AsString;
+    POVRZ_ELMT:= FieldByName('POVRZ_ELMT').AsString;
+  end;
+end;
+
+end.

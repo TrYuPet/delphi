@@ -1,0 +1,31 @@
+program Analiz;
+
+uses
+  Forms,
+  Windows,
+  uSpravForm in 'uSpravForm.pas' {SpravForm},
+  uViewForm in 'uViewForm.pas' {ViewForm},
+  uAddEditRESForm in 'uAddEditRESForm.pas' {AddEditRESForm},
+  uMainForm in 'uMainForm.pas' {MainForm},
+  uDBGridFrame in 'uDBGridFrame.pas' {DBGridFrame: TFrame},
+  uDataModule in 'uDataModule.pas' {DataModule1: TDataModule},
+  uWaitForm in 'uWaitForm.pas' {WaitForm},
+  uAddEditLINEForm in 'uAddEditLINEForm.pas' {AddEditLINEForm},
+  uAddEditPSForm in 'uAddEditPSForm.pas' {AddEditPSForm},
+  uAddEditOTKLForm in 'uAddEditOTKLForm.pas' {AddEditOTKLForm},
+  uAbout in 'uAbout.pas' {About},
+  uCredits in 'uCredits.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Windows.SetWindowLong(Application.Handle, GWL_EXSTYLE,
+      Windows.GetWindowLong(Application.Handle, GWL_EXSTYLE) or
+      WS_EX_TOOLWINDOW and not WS_EX_APPWINDOW); //Запрещаем AppОкну отображаться в TaskBar'е
+  Application.Title := 'Анализ аварийных отключений';
+  Application.CreateForm(TMainForm, MainForm);
+  //    Application.ShowMainForm:= TRue;
+  Application.MainFormOnTaskbar := True;
+  Application.Run;
+end.
